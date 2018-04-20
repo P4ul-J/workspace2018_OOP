@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Blatt1_OpenCV320/src/Blatt1_OpenCV.cpp&apos; to &apos;Blatt1_OpenCV_3.2.0.cpp&apos;" description="Rename resource &apos;Blatt1_OpenCV.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Blatt1_OpenCV.cpp" name="Blatt1_OpenCV_3.2.0.cpp" stamp="1490737881534" updateReferences="true"/>
+</session>

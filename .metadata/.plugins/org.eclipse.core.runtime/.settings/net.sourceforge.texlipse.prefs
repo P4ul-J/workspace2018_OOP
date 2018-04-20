@@ -1,0 +1,16 @@
+BiBTeXTemplates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+TeXTemplates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+builderNum=2
+eclipse.preferences.version=1
+outlineParagraph=false
+outlineSubSubSection=false
+outputFormat=pdf
+returnFocusOnPreivew=true
+styleCompletionSet=roman\=\\textrm{,sans serif\=\\textsf{,small caps\=\\textsc{,teletype\=\\texttt{,bold\=\\textbf{,emphasize\=\\emph{,italic\=\\textit{,slanted\=\\textsl{
+sumatra\ PDF.arguments=-inverse-search "javaw -classpath "${eclipse_home}\\plugins\\net.sourceforge.texlipse_1.5.0\\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %f -l %l" -reuse-instance %fullfile
+sumatra\ PDF.command=..\\SumatraPDF\\SumatraPDF.exe
+sumatra\ PDF.ddeViewCommand=[ForwardSearch("%fullfile","%texfile",%line,0,0,1)]
+sumatra\ PDF.inverse=run
+viewerCurrent=sumatra PDF
+viewerNames=sumatra PDF,yap,acroread,xdvi,itexmac,kdvi,gv,none
+viewerNames.TEMP=sumatra PDF (..\\SumatraPDF\\SumatraPDF.exe),yap (C\:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64\\yap.exe),acroread (),xdvi (),itexmac (),kdvi (),gv (),none ()

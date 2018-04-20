@@ -1,0 +1,148 @@
+\hypertarget{class_c_counter}{}\section{C\+Counter Klassenreferenz}
+\label{class_c_counter}\index{C\+Counter@{C\+Counter}}
+
+
+{\ttfamily \#include $<$ccounter.\+hpp$>$}
+
+
+
+Klassendiagramm für C\+Counter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_c_counter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von C\+Counter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_counter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_counter_ab83c6f9600beb5686747493da731a04c}{C\+Counter} ()
+\begin{DoxyCompactList}\small\item\em Kontstruktor, paramenterlos. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}{$\sim$\+C\+Counter} ()
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}{count} ()
+\begin{DoxyCompactList}\small\item\em Erhöht Zählerstand um 1. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_counter_a2dbc787892c9458d50a4d5ef5dcfe526}{get\+Value} ()
+\item 
+void \hyperlink{class_c_counter_ac41245afdd95c0149e99bad21696a372}{set\+Value} (int value)
+\end{DoxyCompactItemize}
+\subsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_counter_a69073a439ebaa1c748607fdf0eb8d841}{mem}
+\begin{DoxyCompactList}\small\item\em private Membervariable für den Zählerstand \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Klasse \hyperlink{class_c_counter}{C\+Counter}
+
+Enthalt Membervariable mem 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_c_counter_ab83c6f9600beb5686747493da731a04c}\label{class_c_counter_ab83c6f9600beb5686747493da731a04c}} 
+\index{C\+Counter@{C\+Counter}!C\+Counter@{C\+Counter}}
+\index{C\+Counter@{C\+Counter}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{C\+Counter()}{CCounter()}}
+{\footnotesize\ttfamily C\+Counter\+::\+C\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Kontstruktor, paramenterlos. 
+
+\mbox{\Hypertarget{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}\label{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}} 
+\index{C\+Counter@{C\+Counter}!````~C\+Counter@{$\sim$\+C\+Counter}}
+\index{````~C\+Counter@{$\sim$\+C\+Counter}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Counter()}{~CCounter()}}
+{\footnotesize\ttfamily C\+Counter\+::$\sim$\+C\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Dekonstruktor. 
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}\label{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}} 
+\index{C\+Counter@{C\+Counter}!count@{count}}
+\index{count@{count}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily void C\+Counter\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Erhöht Zählerstand um 1. 
+
+
+
+Erneute Implementation in \hyperlink{class_c_variable_counter_a693c27202acd18d53c4642ce642927bc}{C\+Variable\+Counter} und \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{C\+Forward\+Counter}.
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_counter_a2dbc787892c9458d50a4d5ef5dcfe526}\label{class_c_counter_a2dbc787892c9458d50a4d5ef5dcfe526}} 
+\index{C\+Counter@{C\+Counter}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily int C\+Counter\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter \begin{DoxyReturn}{Rückgabe}
+Wert der Membervariable 
+\end{DoxyReturn}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_c_counter_a2dbc787892c9458d50a4d5ef5dcfe526_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_counter_ac41245afdd95c0149e99bad21696a372}\label{class_c_counter_ac41245afdd95c0149e99bad21696a372}} 
+\index{C\+Counter@{C\+Counter}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{set\+Value()}{setValue()}}
+{\footnotesize\ttfamily void C\+Counter\+::set\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+Setter 
+\begin{DoxyParams}{Parameter}
+{\em value} & neuer Wert der Membervariable \\
+\hline
+\end{DoxyParams}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_c_counter_ac41245afdd95c0149e99bad21696a372_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Dokumentation der Datenelemente}
+\mbox{\Hypertarget{class_c_counter_a69073a439ebaa1c748607fdf0eb8d841}\label{class_c_counter_a69073a439ebaa1c748607fdf0eb8d841}} 
+\index{C\+Counter@{C\+Counter}!mem@{mem}}
+\index{mem@{mem}!C\+Counter@{C\+Counter}}
+\subsubsection{\texorpdfstring{mem}{mem}}
+{\footnotesize\ttfamily int C\+Counter\+::mem\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+private Membervariable für den Zählerstand 
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+S\+\_\+\+Blatt2/src/\hyperlink{ccounter_8hpp}{ccounter.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+S\+\_\+\+Blatt2/src/\hyperlink{ccounter_8cpp}{ccounter.\+cpp}\end{DoxyCompactItemize}

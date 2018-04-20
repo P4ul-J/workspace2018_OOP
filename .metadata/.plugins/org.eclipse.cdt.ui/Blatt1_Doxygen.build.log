@@ -1,0 +1,7 @@
+11:48:24 **** Incremental Build of configuration Debug for project Blatt1_Doxygen ****
+Info: Internal Builder is used for build
+g++ "-IC:\\OOP\\portableDevEnv_2017\\eclipse\\/../Eigen333" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Blatt1_Doxygen.o" "..\\src\\Blatt1_Doxygen.cpp" 
+g++ -o Blatt1_Doxygen.exe "src\\Blatt1_Doxygen.o" 
+
+11:48:25 Build Finished (took 1s.716ms)
+
