@@ -1,17 +1,2 @@
-14:15:33 **** Incremental Build of configuration Debug for project Blatt3 ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt3.o" "..\\src\\mainBlatt3.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt3.exe "src\\CCounter.o" "src\\CForwardCounter.o" "src\\CVariableCounter.o" "src\\mainBlatt3.o" -lgtest 
-14:19:59 **** Incremental Build of configuration Debug for project Blatt3 ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt3.o" "..\\src\\mainBlatt3.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt3.exe "src\\CCounter.o" "src\\CForwardCounter.o" "src\\CVariableCounter.o" "src\\mainBlatt3.o" -lgtest 
-14:20:17 **** Incremental Build of configuration Debug for project Blatt3 ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt3.o" "..\\src\\mainBlatt3.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt3.exe "src\\CCounter.o" "src\\CForwardCounter.o" "src\\CVariableCounter.o" "src\\mainBlatt3.o" -lgtest 
-14:20:30 **** Incremental Build of configuration Debug for project Blatt3 ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt3.o" "..\\src\\mainBlatt3.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt3.exe "src\\CCounter.o" "src\\CForwardCounter.o" "src\\CVariableCounter.o" "src\\mainBlatt3.o" -lgtest 
-Info: Nothing to build for Blatt3
+10:26:07 **** Clean-only build of configuration Debug for project Blatt4 ****
+rm -rf src/CEntry.o src/mainBlatt4.o src/CEntry.d src/CSwapper.d src/mainBlatt4.d src/CSwapper.o Blatt4.exe 

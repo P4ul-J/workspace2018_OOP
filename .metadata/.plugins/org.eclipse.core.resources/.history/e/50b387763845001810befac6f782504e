@@ -1,0 +1,18 @@
+/*!\file CEntry.cpp
+ * \brief
+ *
+ *  Created on: 21.04.2018
+ *      Author: diamo
+ */
+
+#include "CEntry.hpp"
+
+CEntry::CEntry() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CEntry::~CEntry() {
+	// TODO Auto-generated destructor stub
+}
+

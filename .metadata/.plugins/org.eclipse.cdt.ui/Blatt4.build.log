@@ -1,0 +1,5 @@
+10:26:07 **** Clean-only build of configuration Debug for project Blatt4 ****
+rm -rf src/CEntry.o src/mainBlatt4.o src/CEntry.d src/CSwapper.d src/mainBlatt4.d src/CSwapper.o Blatt4.exe 
+
+10:26:07 Build Finished (took 251ms)
+
