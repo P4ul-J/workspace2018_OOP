@@ -1,7 +1,10 @@
-08:56:10 **** Incremental Build of configuration Debug for project Blatt6 ****
+12:41:08 **** Incremental Build of configuration Debug for project Blatt6 ****
 Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CEntry.o" "..\\src\\CEntry.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt6.o" "..\\src\\mainBlatt6.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XOutOfBounds.o" "..\\src\\XOutOfBounds.cpp" 
 g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
 g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 
 
-08:56:12 Build Finished (took 1s.719ms)
+12:41:11 Build Finished (took 3s.516ms)
 

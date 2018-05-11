@@ -9,7 +9,7 @@
 #ifndef CARRAY_HPP_
 #define CARRAY_HPP_
 
-#include "XOutOfBounds.hpp"
+#include "XOutOfBounds.hpp" //exception class
 
  /*!\class CArray
   * \brief Erzeugt ein Array vom Typ T mit N Elementen

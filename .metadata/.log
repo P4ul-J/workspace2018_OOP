@@ -7185,3 +7185,18 @@ java.io.FileNotFoundException: C:\portableDevEnv_2017\workspace2017\Blatt6\Debug
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.codan.checkers 4 0 2018-05-11 12:22:29.825
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.codan.core 4 1 2018-05-11 12:22:30.122
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.cdt.codan.core 4 1 2018-05-11 12:22:30.122
+!MESSAGE Internal Error
+!STACK 0
+java.lang.NullPointerException

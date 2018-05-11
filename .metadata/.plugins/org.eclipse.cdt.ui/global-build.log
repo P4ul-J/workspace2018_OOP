@@ -30,3 +30,10 @@ g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEnt
 Info: Internal Builder is used for build
 g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
 g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 
+12:41:08 **** Incremental Build of configuration Debug for project Blatt6 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CEntry.o" "..\\src\\CEntry.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt6.o" "..\\src\\mainBlatt6.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XOutOfBounds.o" "..\\src\\XOutOfBounds.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 

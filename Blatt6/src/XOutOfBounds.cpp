@@ -7,10 +7,10 @@
 
 #include "XOutOfBounds.hpp"
 
-XOutOfBounds::XOutOfBounds(const char* msg) : m_msg(msg){}
+XOutOfBounds::XOutOfBounds(const char* msg) : m_msg(msg){} //Initialisierung von m_msg über Init.-Liste
 
-XOutOfBounds::~XOutOfBounds() throw() {}
+XOutOfBounds::~XOutOfBounds() throw() {} //Destruktor darf keine exceptions werfen
 
-const char* XOutOfBounds::what() const throw(){
-	return m_msg.c_str();
+const char* XOutOfBounds::what() const throw(){ //readonly, darf keine exceptions werfen
+	return m_msg.c_str();  //wandelt c++ string in einen c string (also Array of char) um und gibt diesen aus
 }
