@@ -110,8 +110,11 @@ int main(int argc, char** argv) {
 
 // Hauptprogramm für Programmentwicklung
 #ifdef AUFGABE_2b
+
+#include "derGroessere.hpp"
+
 int main(){
-// Fügen Sie hier Ihre eigene main-Funktion für Aufgabe 2b ein
+//// Fügen Sie hier Ihre eigene main-Funktion für Aufgabe 2b ein
 	CForwardCounter obj1;
 	CVariableCounter obj2(-2);
 	obj1.setValue(10);
@@ -124,6 +127,17 @@ int main(){
 	}
 	std::cout << "Nach " << x << " Schritten ist der CVariableCounter (" << obj2.getValue()<<
 				") kleiner als der CForwardCounter("<< obj1.getValue()<<")"<<std::endl;
+
+	/*
+	 * CForwardCounter cf; cf.setValue(10);
+	 * CVariableCounter cv(-2); cv.setValue(50);
+	 * CCounter& big = istGroesser<CCounter>(cf, cv);
+	 * big.count;
+	 * std::cout << big.getValue() << std::endl;
+	 * std::cout << cv.getValue() << std::endl;
+	 */
+
+	//std::cout << derGroessere(2,3) << std::endl;
 }
 
 

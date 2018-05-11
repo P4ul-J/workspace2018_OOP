@@ -1,1 +1,7 @@
-Info: Nothing to build for Blatt3
+07:56:59 **** Incremental Build of configuration Debug for project Blatt3 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt3.o" "..\\src\\mainBlatt3.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt3.exe "src\\CCounter.o" "src\\CForwardCounter.o" "src\\CVariableCounter.o" "src\\mainBlatt3.o" -lgtest 
+
+07:57:01 Build Finished (took 1s.471ms)
+

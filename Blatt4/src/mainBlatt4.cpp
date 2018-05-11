@@ -12,7 +12,7 @@
 #include "CEntry.hpp"
 #include "CSwapper.hpp"
 
-#define AUFGABE_3
+#define AUFGABE_1
 
 #ifdef AUFGABE_1
 TEST(CEntryTest, InitialEmpty) {

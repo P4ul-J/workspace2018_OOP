@@ -1,0 +1,20 @@
+/*!\file CKnot.hpp
+ * \brief
+ *
+ *  Created on: 11.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CKNOT_HPP_
+#define CKNOT_HPP_
+
+/*!
+ *
+ */
+class CKnot {
+public:
+	CKnot();
+	virtual ~CKnot();
+};
+
+#endif /* CKNOT_HPP_ */

@@ -1,0 +1,20 @@
+/*!\file XOutOfBounds.hpp
+ * \brief
+ *
+ *  Created on: 10.05.2018
+ *      Author: diamo
+ */
+
+#ifndef XOUTOFBOUNDS_HPP_
+#define XOUTOFBOUNDS_HPP_
+
+/*!
+ *
+ */
+class XOutOfBounds {
+public:
+	XOutOfBounds();
+	virtual ~XOutOfBounds();
+};
+
+#endif /* XOUTOFBOUNDS_HPP_ */

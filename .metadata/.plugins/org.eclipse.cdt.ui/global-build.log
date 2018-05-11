@@ -1,2 +1,32 @@
-10:26:07 **** Clean-only build of configuration Debug for project Blatt4 ****
-rm -rf src/CEntry.o src/mainBlatt4.o src/CEntry.d src/CSwapper.d src/mainBlatt4.d src/CSwapper.o Blatt4.exe 
+08:42:28 **** Clean-only build of configuration Debug for project Blatt6 ****
+rm -rf src/XOutOfBounds.o src/mainBlatt6.d src/CKnot.o src/XOutOfBounds.d src/CEntry.d src/CKnot.d src/mainBlatt6.o src/CEntry.o Blatt6.exe 
+08:42:30 **** Rebuild of configuration Debug for project Blatt6 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
+..\src\CKnot.cpp: In constructor 'CKnot::CKnot()':
+..\src\CKnot.cpp:10:31: error: 'std::__cxx11::string CEntry::m_symbol' is private within this context
+ CKnot::CKnot() : m_parent(0), m_symbol(""){}
+                               ^~~~~~~~
+In file included from ..\src\CKnot.hpp:10:0,
+                 from ..\src\CKnot.cpp:8:
+..\src\CEntry.hpp:17:14: note: declared private here
+  std::string m_symbol;
+              ^~~~~~~~
+..\src\CKnot.cpp:10:31: error: class 'CKnot' does not have any field named 'm_symbol'
+ CKnot::CKnot() : m_parent(0), m_symbol(""){}
+                               ^~~~~~~~
+08:44:31 **** Incremental Build of configuration Debug for project Blatt6 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\XOutOfBounds.o" "..\\src\\XOutOfBounds.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt6.o" "..\\src\\mainBlatt6.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CEntry.o" "..\\src\\CEntry.cpp" 
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 
+08:49:56 **** Incremental Build of configuration Debug for project Blatt6 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt6.o" "..\\src\\mainBlatt6.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 
+08:56:10 **** Incremental Build of configuration Debug for project Blatt6 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CKnot.o" "..\\src\\CKnot.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt6.exe "src\\CEntry.o" "src\\CKnot.o" "src\\XOutOfBounds.o" "src\\mainBlatt6.o" -lgtest 

@@ -1,5 +1,7 @@
-10:26:07 **** Clean-only build of configuration Debug for project Blatt4 ****
-rm -rf src/CEntry.o src/mainBlatt4.o src/CEntry.d src/CSwapper.d src/mainBlatt4.d src/CSwapper.o Blatt4.exe 
+09:02:52 **** Incremental Build of configuration Debug for project Blatt4 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt4.o" "..\\src\\mainBlatt4.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt4.exe "src\\CEntry.o" "src\\CSwapper.o" "src\\mainBlatt4.o" -lgtest 
 
-10:26:07 Build Finished (took 251ms)
+09:02:54 Build Finished (took 2s.141ms)
 
