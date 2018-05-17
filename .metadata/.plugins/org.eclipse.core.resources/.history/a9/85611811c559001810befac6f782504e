@@ -1,0 +1,35 @@
+\hypertarget{_c_forward_counter_8hpp}{}\section{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\+C\+Forward\+Counter.hpp-\/\+Dateireferenz}
+\label{_c_forward_counter_8hpp}\index{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\+C\+Forward\+Counter.\+hpp@{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\+C\+Forward\+Counter.\+hpp}}
+
+
+Vorwärtszähler, inkrementiert um 1, Klasse ist abgeleitet von \hyperlink{class_c_counter}{C\+Counter}.  
+
+
+{\ttfamily \#include \char`\"{}C\+Counter.\+hpp\char`\"{}}\newline
+Include-\/\+Abhängigkeitsdiagramm für C\+Forward\+Counter.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{_c_forward_counter_8hpp__incl}
+\end{center}
+\end{figure}
+Dieser Graph zeigt, welche Datei direkt oder indirekt diese Datei enthält\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{_c_forward_counter_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_forward_counter}{C\+Forward\+Counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Vorwärtszähler, inkrementiert um 1, Klasse ist abgeleitet von \hyperlink{class_c_counter}{C\+Counter}. 
+
+Klasse aus Übung 2. Methode count() in Basisklasse \hyperlink{class_c_counter}{C\+Counter} wird modifiziert, so dass sie nicht mehr zählt. In \hyperlink{class_c_forward_counter}{C\+Forward\+Counter} wird die Memberfunktion count() so überschrieben, dass sie mit Schrittweite 1 inkrementiert. 
