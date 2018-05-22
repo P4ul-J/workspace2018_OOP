@@ -1,0 +1,20 @@
+/*!\file CCounterObserver.hpp
+ * \brief
+ *
+ *  Created on: 18.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CCOUNTEROBSERVER_HPP_
+#define CCOUNTEROBSERVER_HPP_
+
+/*!
+ *
+ */
+class CCounterObserver {
+public:
+	CCounterObserver();
+	virtual ~CCounterObserver();
+};
+
+#endif /* CCOUNTEROBSERVER_HPP_ */

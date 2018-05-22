@@ -1,0 +1,7 @@
+08:55:21 **** Incremental Build of configuration Debug for project Blatt7 ****
+Info: Internal Builder is used for build
+g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CDoubleHashing.o" "..\\src\\CDoubleHashing.cpp" 
+g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt7.exe "src\\CDoubleHashing.o" "src\\mainBlatt7.o" -lgtest 
+
+08:55:24 Build Finished (took 2s.274ms)
+

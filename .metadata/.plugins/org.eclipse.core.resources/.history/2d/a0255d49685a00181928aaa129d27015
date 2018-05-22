@@ -1,0 +1,18 @@
+/*!\file CDoubleHashing.cpp
+ * \brief
+ *
+ *  Created on: 18.05.2018
+ *      Author: diamo
+ */
+
+#include "CDoubleHashing.hpp"
+
+CDoubleHashing::CDoubleHashing() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CDoubleHashing::~CDoubleHashing() {
+	// TODO Auto-generated destructor stub
+}
+
