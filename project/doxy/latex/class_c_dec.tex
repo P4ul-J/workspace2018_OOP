@@ -1,0 +1,80 @@
+\hypertarget{class_c_dec}{}\section{C\+Dec Klassenreferenz}
+\label{class_c_dec}\index{C\+Dec@{C\+Dec}}
+
+
+Abstrakte Basisklasse für die Decoder.  
+
+
+
+
+{\ttfamily \#include $<$C\+Dec.\+hpp$>$}
+
+
+
+Klassendiagramm für C\+Dec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_c_dec__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von C\+Dec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_dec__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \hyperlink{class_c_dec_a88c60d9d4285714347a3bae0ef0a319d}{decode} (const vector$<$ unsigned int $>$ \&in)=0
+\item 
+virtual \hyperlink{class_c_dec_a66bbd291c322a9ca78c80284eb9c5acf}{$\sim$\+C\+Dec} ()
+\begin{DoxyCompactList}\small\item\em Virtueller Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+Abstrakte Basisklasse für die Decoder. 
+
+Abstrakte Basisklasse für die Decoder. \hyperlink{class_c_dec}{C\+Dec} erbt von \hyperlink{class_c_l_z_w}{C\+L\+ZW}. Basisklasse der Encoderklassen \hyperlink{class_c_array_dec}{C\+Array\+Dec} und \hyperlink{class_c_trie_dec}{C\+Trie\+Dec}. Von dieser Klasse \hyperlink{class_c_dec}{C\+Dec} selbst können keine Instanzen erstellt werden, sie ist abstrakt. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_c_dec_a66bbd291c322a9ca78c80284eb9c5acf}\label{class_c_dec_a66bbd291c322a9ca78c80284eb9c5acf}} 
+\index{C\+Dec@{C\+Dec}!````~C\+Dec@{$\sim$\+C\+Dec}}
+\index{````~C\+Dec@{$\sim$\+C\+Dec}!C\+Dec@{C\+Dec}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Dec()}{~CDec()}}
+{\footnotesize\ttfamily C\+Dec\+::$\sim$\+C\+Dec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtueller Destruktor. 
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_c_dec_a88c60d9d4285714347a3bae0ef0a319d}\label{class_c_dec_a88c60d9d4285714347a3bae0ef0a319d}} 
+\index{C\+Dec@{C\+Dec}!decode@{decode}}
+\index{decode@{decode}!C\+Dec@{C\+Dec}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily virtual string C\+Dec\+::decode (\begin{DoxyParamCaption}\item[{const vector$<$ unsigned int $>$ \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+decodiert (restauriert) den String in mit Hilfe des L\+Z\+W-\/\+Algorithmus 
+\begin{DoxyParams}{Parameter}
+{\em in} & Vektor der zu decodierenden Indexwerte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+decodierter Zählerstand 
+\end{DoxyReturn}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_dec_8hpp}{C\+Dec.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_dec_8cpp}{C\+Dec.\+cpp}\end{DoxyCompactItemize}

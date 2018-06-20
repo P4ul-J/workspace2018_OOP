@@ -1,0 +1,18 @@
+/*!\file CArrayDec.cpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#include "CArrayDec.hpp"
+
+CArrayDec::CArrayDec() {
+	// TODO Auto-generated constructor stub
+
+}
+
+CArrayDec::~CArrayDec() {
+	// TODO Auto-generated destructor stub
+}
+

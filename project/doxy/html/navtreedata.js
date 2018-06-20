@@ -15,6 +15,7 @@ var NAVTREE =
       [ "Datei-Elemente", "globals.html", [
         [ "Alle", "globals.html", null ],
         [ "Funktionen", "globals_func.html", null ],
+        [ "Variablen", "globals_vars.html", null ],
         [ "Makrodefinitionen", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -23,7 +24,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_c_counter_8cpp.html"
+"_c_array_8hpp.html"
 ];
 
 var SYNCONMSG = 'Klicken um Panelsynchronisation auszuschalten';

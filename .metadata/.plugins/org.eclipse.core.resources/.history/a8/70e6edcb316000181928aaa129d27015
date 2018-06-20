@@ -1,0 +1,59 @@
+/*!\file CArrayEnc.cpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#include "CArrayEnc.hpp"
+CArrayEnc::CArrayEnc() {
+	char letter{0};
+	m_index{0};
+	for(m_index = 0; m_index < 256; m_index++, letter++){
+		m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+	}
+}
+int CArrayEnc::searchInTable(const std::string& whereAmI ){
+	for(int i = 0; i < LZW_DICT_SIZE; i++){
+		if(m_symbolTable[i].getSymbol() == whereAmI){
+			return i;
+		}
+	}
+	return -1;
+}
+
+void CArrayEnc::push_back(const std::string& newString){
+	m_symbolTable[ m_index++ ].setSymbol( newString );
+}
+
+std::vector<unsigned int> CArrayEnc::encode(const std::string& in){
+	unsigned char curr_char;
+	int i {0};
+	vector<unsigned int> send;
+//	if(! in.empty()){
+//		curr_char = in.at(i++);
+//		send.push_back( static_cast<unsigned int>(searchInTable(static_cast<std::string> (curr_char))) ); //no if statement needed, first char always in dict
+//	}
+//	else return send;
+
+	std::string curr_str;
+	for(std::string::const_iterator it = in.begin(); it != in.end() ; ++it){
+		curr_char = *it;
+		std::string working_copy = curr_str + curr_char;
+		if(searchInTable(working_copy) + 1){
+			curr_str = working_copy;
+		}else{
+			send.at(i++) = searchInTable(curr_str);
+			push_back(working_copy);
+			curr_str = static_cast<std::string>(curr_char);
+		}
+	}
+
+	if(!curr_str.empty())
+		send.at(i++) = searchInTable(curr_str);
+	return send;
+
+}
+
+
+

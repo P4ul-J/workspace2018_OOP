@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Übung Objektorientierte Programmierung: C:/portableDevEnv_2017/workspace2017/project/src/CTrieDec.hpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Übung Objektorientierte Programmierung
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">First Version 2017</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_trie_dec_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CTrieDec.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_trie_dec_8hpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CTRIEDEC_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define CTRIEDEC_HPP_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_knot_8hpp.html">CKnot.hpp</a>&quot;</span> <span class="comment">//für Datentyp Knot -&gt; einzelne Knoten</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">//für std::vector -&gt; Ausgabe des komprimierten Strings</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">//für std::string -&gt; Eingabe des zu komprimierenden Strings</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_double_hashing_8hpp.html">CDoubleHashing.hpp</a>&quot;</span> <span class="comment">//Hashing Funktion</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_forward_counter_8hpp.html">CForwardCounter.hpp</a>&quot;</span><span class="comment">//counter, der Anzahl der ReHashing Versuch zählt</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_dec_8hpp.html">CDec.hpp</a>&quot;</span> <span class="comment">//Basisklasse</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_trie_dec.html">   26</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="class_c_trie_dec.html">CTrieDec</a> : <span class="keyword">public</span> <a class="code" href="class_c_dec.html">CDec</a>{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_c_knot.html">CKnot</a>* m_symbolTable;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string getString(<span class="keywordtype">int</span> knot);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> find_last_knot(<span class="keyword">const</span> std::string in);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_trie_dec.html#a64323697e83419686801b04c5b12ac37">CTrieDec</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_c_trie_dec.html#a2e3dee1b9fae4e8fd82a7ba6247bb564">~CTrieDec</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string <a class="code" href="class_c_trie_dec.html#a190f82222a2f7881b940066c54b00d38">decode</a>(<span class="keyword">const</span> std::vector&lt;unsigned int&gt;&amp; enc);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CTRIEDEC_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="_c_dec_8hpp_html"><div class="ttname"><a href="_c_dec_8hpp.html">CDec.hpp</a></div><div class="ttdoc">Klasse CDec Abstrakte Basisklasse für Decodierung. </div></div>
+<div class="ttc" id="class_c_knot_html"><div class="ttname"><a href="class_c_knot.html">CKnot</a></div><div class="ttdoc">Erweiterung von CEntry Erweitert CEntry zusätzlich um die Variable m_parent und wird zur Verwaltung b...</div><div class="ttdef"><b>Definition:</b> CKnot.hpp:17</div></div>
+<div class="ttc" id="class_c_trie_dec_html"><div class="ttname"><a href="class_c_trie_dec.html">CTrieDec</a></div><div class="ttdoc">LZW Decoder Klasse für die Decodierung erbt von CEnc. </div><div class="ttdef"><b>Definition:</b> CTrieDec.hpp:26</div></div>
+<div class="ttc" id="class_c_trie_dec_html_a64323697e83419686801b04c5b12ac37"><div class="ttname"><a href="class_c_trie_dec.html#a64323697e83419686801b04c5b12ac37">CTrieDec::CTrieDec</a></div><div class="ttdeci">CTrieDec()</div><div class="ttdef"><b>Definition:</b> CTrieDec.cpp:12</div></div>
+<div class="ttc" id="class_c_dec_html"><div class="ttname"><a href="class_c_dec.html">CDec</a></div><div class="ttdoc">Abstrakte Basisklasse für die Decoder. </div><div class="ttdef"><b>Definition:</b> CDec.hpp:26</div></div>
+<div class="ttc" id="class_c_trie_dec_html_a2e3dee1b9fae4e8fd82a7ba6247bb564"><div class="ttname"><a href="class_c_trie_dec.html#a2e3dee1b9fae4e8fd82a7ba6247bb564">CTrieDec::~CTrieDec</a></div><div class="ttdeci">~CTrieDec()</div><div class="ttdef"><b>Definition:</b> CTrieDec.cpp:19</div></div>
+<div class="ttc" id="_c_double_hashing_8hpp_html"><div class="ttname"><a href="_c_double_hashing_8hpp.html">CDoubleHashing.hpp</a></div><div class="ttdoc">Klasse zum Hashen. </div></div>
+<div class="ttc" id="_c_forward_counter_8hpp_html"><div class="ttname"><a href="_c_forward_counter_8hpp.html">CForwardCounter.hpp</a></div><div class="ttdoc">Created on: 07.04.2018 Author: diamo. </div></div>
+<div class="ttc" id="_c_knot_8hpp_html"><div class="ttname"><a href="_c_knot_8hpp.html">CKnot.hpp</a></div><div class="ttdoc">Enthält die Klasse CEntry Erbt von CKnot. </div></div>
+<div class="ttc" id="class_c_trie_dec_html_a190f82222a2f7881b940066c54b00d38"><div class="ttname"><a href="class_c_trie_dec.html#a190f82222a2f7881b940066c54b00d38">CTrieDec::decode</a></div><div class="ttdeci">std::string decode(const std::vector&lt; unsigned int &gt; &amp;enc)</div><div class="ttdef"><b>Definition:</b> CTrieDec.cpp:100</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_c_trie_dec_8hpp.html">CTrieDec.hpp</a></li>
+    <li class="footer">Erzeugt am Sam Jun 2 2018 10:44:25 für Übung Objektorientierte Programmierung von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/*!\file CArrayDec.cpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#include "CArrayDec.hpp"
+#include <iostream>
+CArrayDec::CArrayDec() {
+	char letter{0};
+	m_index = 0;
+	for(m_index = 0; m_index < 256; m_index++, letter++){
+		m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+	}
+}
+int CArrayDec::searchInTable(const std::string& whereAmI ){
+	for(int i = 0; i < LZW_DICT_SIZE; i++){
+		if(m_symbolTable[i].getSymbol() == whereAmI){
+			return i;
+		}
+	}
+	return -1;
+}
+
+std::string CArrayDec::decode(const std::vector<unsigned int>& enc){
+	if(enc.empty()) return "";
+
+	//char curr_char;
+	unsigned int index;
+	std::string decoded_str, last_str, curr_str;
+
+	index = *(enc.begin());
+	last_str = m_symbolTable[index].getSymbol();
+	decoded_str = last_str;
+
+	for(std::vector<unsigned int>::const_iterator it = ++enc.begin(); it != enc.end() ; ++it){
+//		last_str = curr_str;
+		index = *it;
+		if(index >= LZW_DICT_SIZE){
+			std::cerr << "Dictionary full, error code 1234" << std::endl;
+			exit(-1);
+		}
+		if(index < m_index )
+			curr_str = m_symbolTable[index].getSymbol();
+		else if(index == m_index)
+			curr_str = last_str + last_str.front();
+		else
+			throw "Encoding is bad!";
+		decoded_str += curr_str;
+		m_symbolTable[m_index++].setSymbol( last_str + curr_str.front() );
+		last_str = curr_str;
+	}
+
+	return decoded_str;
+}
+
+
+

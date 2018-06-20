@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Übung Objektorientierte Programmierung: C:/portableDevEnv_2017/workspace2017/project/src/CArrayEnc.hpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Übung Objektorientierte Programmierung
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">First Version 2017</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_c_array_enc_8hpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CArrayEnc.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_array_enc_8hpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef CARRAYENC_HPP_</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define CARRAYENC_HPP_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_entry_8hpp.html">CEntry.hpp</a>&quot;</span> <span class="comment">// für Typ der Dictionary Elemente</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_array_8hpp.html">CArray.hpp</a>&quot;</span><span class="comment">// eigene Array Implementierung</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// std::string -&gt; Eingabe des zu komprimierenden Strings</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">// std::vector -&gt; Ausgabe des komprimierten Strings</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_enc_8hpp.html">CEnc.hpp</a>&quot;</span> <span class="comment">// Basisklasse</span></div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_array_enc.html">   25</a></span>&#160;<span class="comment"></span><span class="keyword">class </span><a class="code" href="class_c_array_enc.html">CArrayEnc</a> : <span class="keyword">public</span> <a class="code" href="class_c_enc.html">CEnc</a>{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_array.html">CArray&lt;CEntry, LZW_DICT_SIZE&gt;</a> m_symbolTable;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_index; <span class="comment">//erleichtert den überblick über das neueste Element/Eintrag zu behalten</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> searchInTable(<span class="keyword">const</span> std::string&amp; whereAmI );</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> push_back(<span class="keyword">const</span> std::string&amp; newString); <span class="comment">//erleichtert einfügen, macht encoder übersichtlicher</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_array_enc.html#ad583bca8c7872d055f6118219f657970">CArrayEnc</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::vector&lt;unsigned int&gt; <a class="code" href="class_c_array_enc.html#a51984cee678c54c93caf73aa82b596cc">encode</a>(<span class="keyword">const</span> std::string&amp; in);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CARRAYENC_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="class_c_array_enc_html"><div class="ttname"><a href="class_c_array_enc.html">CArrayEnc</a></div><div class="ttdoc">LZW Encoder Klasse für die Encodierung erbt von CEnc. </div><div class="ttdef"><b>Definition:</b> CArrayEnc.hpp:25</div></div>
+<div class="ttc" id="class_c_array_enc_html_a51984cee678c54c93caf73aa82b596cc"><div class="ttname"><a href="class_c_array_enc.html#a51984cee678c54c93caf73aa82b596cc">CArrayEnc::encode</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; encode(const std::string &amp;in)</div><div class="ttdef"><b>Definition:</b> CArrayEnc.cpp:35</div></div>
+<div class="ttc" id="class_c_array_enc_html_ad583bca8c7872d055f6118219f657970"><div class="ttname"><a href="class_c_array_enc.html#ad583bca8c7872d055f6118219f657970">CArrayEnc::CArrayEnc</a></div><div class="ttdeci">CArrayEnc()</div><div class="ttdoc">Parameterloser Konstuktor der Klasse initialisiert das Dicitonary mit den ersten 256 ASCII Zeichen...</div><div class="ttdef"><b>Definition:</b> CArrayEnc.cpp:10</div></div>
+<div class="ttc" id="class_c_array_html"><div class="ttname"><a href="class_c_array.html">CArray&lt; CEntry, LZW_DICT_SIZE &gt;</a></div></div>
+<div class="ttc" id="_c_enc_8hpp_html"><div class="ttname"><a href="_c_enc_8hpp.html">CEnc.hpp</a></div><div class="ttdoc">Klasse CEnc Abstrakte Basisklasse für Encodierung. </div></div>
+<div class="ttc" id="_c_array_8hpp_html"><div class="ttname"><a href="_c_array_8hpp.html">CArray.hpp</a></div><div class="ttdoc">Template-Klasse CArray Erzeugt ein Array vom Typ T mit N Elementen. </div></div>
+<div class="ttc" id="class_c_enc_html"><div class="ttname"><a href="class_c_enc.html">CEnc</a></div><div class="ttdoc">Abstrakte Basisklasse für die Encoder. </div><div class="ttdef"><b>Definition:</b> CEnc.hpp:26</div></div>
+<div class="ttc" id="_c_entry_8hpp_html"><div class="ttname"><a href="_c_entry_8hpp.html">CEntry.hpp</a></div><div class="ttdoc">Enthält die Basisklasse CEntry Wird später von CKnot benötigt. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_c_array_enc_8hpp.html">CArrayEnc.hpp</a></li>
+    <li class="footer">Erzeugt am Sam Jun 2 2018 10:44:25 für Übung Objektorientierte Programmierung von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

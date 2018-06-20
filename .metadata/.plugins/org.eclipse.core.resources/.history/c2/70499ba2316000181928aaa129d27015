@@ -1,0 +1,30 @@
+/*!\file CArrayEnc.cpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#include "CArrayEnc.hpp"
+CArrayEnc::CArrayEnc() {
+	char letter{0};
+	for(int i = 0; i < 256; i++, letter++){
+		m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+	}
+}
+int CArrayEnc::searchInTable(const std::string& whereAmI ){
+	for(int i = 0; i < LZW_DICT_SIZE; i++){
+		if(m_symbolTable[i].getSymbol() == whereAmI){
+			return i;
+		}
+	}
+	return -1;
+}
+
+
+std::vector<unsigned int> CArrayEnc::encode(const std::string& in){
+
+}
+
+
+

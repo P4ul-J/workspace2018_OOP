@@ -1,0 +1,5 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="319,5,453,32"/>
+<area shape="rect" id="node3" href="$class_c_forward_counter.html#afc451afa9f8b76f70b28c08982265a86" title="Erhöht Zählerstand um 1. " alt="" coords="108,56,271,83"/>
+<area shape="rect" id="node4" href="$class_c_counter.html#ac41245afdd95c0149e99bad21696a372" title="CCounter::setValue" alt="" coords="319,56,453,83"/>
+</map>

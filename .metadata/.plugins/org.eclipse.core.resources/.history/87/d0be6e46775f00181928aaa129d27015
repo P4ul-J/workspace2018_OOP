@@ -1,0 +1,20 @@
+/*!\file CArrayEnc.hpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CARRAYENC_HPP_
+#define CARRAYENC_HPP_
+
+/*!
+ *
+ */
+class CArrayEnc {
+public:
+	CArrayEnc();
+	virtual ~CArrayEnc();
+};
+
+#endif /* CARRAYENC_HPP_ */

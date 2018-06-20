@@ -1,0 +1,20 @@
+/*!\file CTrieDec.hpp
+ * \brief
+ *
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CTRIEDEC_HPP_
+#define CTRIEDEC_HPP_
+
+/*!
+ *
+ */
+class CTrieDec {
+public:
+	CTrieDec();
+	virtual ~CTrieDec();
+};
+
+#endif /* CTRIEDEC_HPP_ */

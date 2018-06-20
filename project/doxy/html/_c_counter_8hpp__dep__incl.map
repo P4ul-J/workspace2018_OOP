@@ -1,8 +1,10 @@
-<map id="C:/portableDevEnv_2017/workspace2017/Blatt2/src/CCounter.hpp" name="C:/portableDevEnv_2017/workspace2017/Blatt2/src/CCounter.hpp">
-<area shape="rect" id="node2" href="$_c_counter_8cpp.html" title="Definitionen der Klasse CCounter. " alt="" coords="5,109,168,165"/>
-<area shape="rect" id="node3" href="$_c_forward_counter_8hpp.html" title="Vorwärtszähler, inkrementiert um 1, Klasse ist abgeleitet von CCounter. " alt="" coords="192,109,365,165"/>
-<area shape="rect" id="node5" href="$_c_variable_counter_8hpp.html" title="Vorwärtszähler, inkrementiert um einen bei Erzeugung festzulegenden Wert, Klasse ist abgeleitet von C..." alt="" coords="390,109,565,165"/>
-<area shape="rect" id="node7" href="$main_blatt2_8cpp.html" title="C:/portableDevEnv_2017\l/workspace2017/Blatt2\l/src/mainBlatt2.cpp" alt="" coords="589,109,752,165"/>
-<area shape="rect" id="node4" href="$_c_forward_counter_8cpp.html" title="C:/portableDevEnv_2017\l/workspace2017/Blatt2\l/src/CForwardCounter.cpp" alt="" coords="192,213,365,269"/>
-<area shape="rect" id="node6" href="$_c_variable_counter_8cpp.html" title="C:/portableDevEnv_2017\l/workspace2017/Blatt2\l/src/CVariableCounter.cpp" alt="" coords="390,213,565,269"/>
+<map id="C:/portableDevEnv_2017/workspace2017/project/src/CCounter.hpp" name="C:/portableDevEnv_2017/workspace2017/project/src/CCounter.hpp">
+<area shape="rect" id="node2" href="$_c_counter_8cpp.html" title="Created on: 06.04.2018 Author: diamo. " alt="" coords="129,109,292,165"/>
+<area shape="rect" id="node3" href="$_c_forward_counter_8hpp.html" title="Created on: 07.04.2018 Author: diamo. " alt="" coords="316,109,489,165"/>
+<area shape="rect" id="node7" href="$main_praktikum_8cpp.html" title="C:/portableDevEnv_2017\l/workspace2017/project\l/src/mainPraktikum.cpp" alt="" coords="355,317,517,373"/>
+<area shape="rect" id="node4" href="$_c_forward_counter_8cpp.html" title="Created on: 07.04.2018 Author: diamo. " alt="" coords="5,213,179,269"/>
+<area shape="rect" id="node5" href="$_c_trie_dec_8hpp.html" title="LZW Decoder, Dictionary implementiert als Trie. " alt="" coords="203,213,365,269"/>
+<area shape="rect" id="node8" href="$_c_trie_enc_8hpp.html" title="LZW Encoder, Dictionary implementiert als Trie. " alt="" coords="440,213,603,269"/>
+<area shape="rect" id="node6" href="$_c_trie_dec_8cpp.html" title="Created on: 29.05.2018 Author: diamo. " alt="" coords="168,317,331,373"/>
+<area shape="rect" id="node9" href="$_c_trie_enc_8cpp.html" title="Created on: 29.05.2018 Author: diamo. " alt="" coords="541,317,704,373"/>
 </map>

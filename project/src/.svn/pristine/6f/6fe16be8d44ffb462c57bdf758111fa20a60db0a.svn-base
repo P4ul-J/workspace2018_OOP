@@ -1,0 +1,31 @@
+/*!\file CArrayDec.hpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CARRAYDEC_HPP_
+#define CARRAYDEC_HPP_
+
+#include "CEntry.hpp"
+#include "CArray.hpp"
+#include <string>
+#include <vector>
+#include "CDec.hpp"
+/*!
+ *
+ */
+class CArrayDec : public CDec {
+private:
+	CArray<CEntry, LZW_DICT_SIZE> m_symbolTable;
+	unsigned int m_index;
+public:
+	CArrayDec();
+
+	int searchInTable(const std::string& whereAmI );
+	std::string decode(const std::vector<unsigned int>& enc);
+	void push_back(const std::string& newString);
+};
+
+#endif /* CARRAYDEC_HPP_ */

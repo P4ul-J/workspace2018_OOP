@@ -1,0 +1,16 @@
+/*!\file CTrieEnc.cpp
+ * \brief
+ *
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+
+#include "CTrieEnc.hpp"
+
+CTrieEnc::CTrieEnc() {
+	// TODO Auto-generated constructor stub
+
+}
+
+
+

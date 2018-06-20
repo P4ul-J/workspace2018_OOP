@@ -1,0 +1,206 @@
+/*!\file CTrieDec.cpp
+ * \brief
+ *
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+
+#include "CTrieDec.hpp"
+#include <iostream>
+#include <algorithm> //for reverse()
+
+CTrieDec::CTrieDec() {
+	m_symbolTable = new CKnot[LZW_DICT_SIZE];
+	for(int i = 0; i < 256 ; i++){
+			m_symbolTable[i].setSymbol(intToString(i));
+			m_symbolTable[i].setParent(-1);
+	}
+}
+
+//tracks a knot to the root and output the string saved
+std::string CTrieDec::getString(int knot){
+	std::string reverse_str;
+	while(knot != -1){
+		reverse_str += m_symbolTable[knot].getSymbol();
+		knot = m_symbolTable[knot].getParent();
+		if(knot == -2){
+			std::cerr << "Failure reading the Path, getString function" << std::endl;
+		}
+	}
+	std::reverse(reverse_str.begin(), reverse_str.end());
+	return reverse_str;
+}
+//todo problem how to find the last index of a string
+int CTrieDec::find_last_knot(const std::string in){
+	CDoubleHashing& hash = CDoubleHashing::getInstance();
+	int I, J;//I Parent-address, J char
+
+	int newPos, rehash;
+	J = static_cast<unsigned char>(in.front());
+	I = J; //Value of J is the Position of the Knot because of how the dict is initialized
+	for(std::string::const_iterator it = ++in.begin(); it != in.end(); ++it){
+
+		CForwardCounter attemptCounter;
+		rehash = -1;
+		J = static_cast<unsigned char>(*it);
+		newPos = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+		rehash = newPos;
+		while(	m_symbolTable[rehash].getParent() != -2 && //leerer Knoten
+				( J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent() )// Knoten enthält I und J bereits
+			)
+		{
+			attemptCounter.count();
+			rehash = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+
+			if(rehash == newPos){// kommt wieder beim ursprünglichen Hashwert an
+				/*
+				std::cout << "newPos: " << newPos << " rehash: " << rehash << std::endl; //DEBUG
+				std::cout << "I:" << I << " J: " << J << " attempt: " << attemptCounter.getValue() << " String: " << in << std::endl; //DEBUG
+				//std::vector<unsigned int> error;
+				//return error;
+
+				break;*/
+				exit(99);
+			}
+
+			//DEBUG:
+			/*
+			if( !(J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent()) ){
+				std::cout << m_symbolTable[rehash].getSymbol().front() << "\t" << m_symbolTable[rehash].getParent() << std::endl; //DEBUG
+				std::cout << "J: " << J << " I: " << I << std::endl;//DEBUG
+			}*/
+		}
+
+		//std::cout << I << "\t" << J << std::endl; //DEBUG
+		if(!(J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent())){
+					I = rehash;
+
+				}
+
+		if(m_symbolTable[rehash].getParent() != -2){ //nicht immer möglich
+			return I;
+		}
+
+			}
+
+	// std::cerr << I << " J: " << J << " rehash: "<< rehash <<  std::endl; // DEBUG
+	return I;
+}
+//
+//std::string CTrieDec::decode(const std::vector<unsigned int>& enc){
+//	if(enc.empty())return "";
+//	CDoubleHashing& hash = CDoubleHashing::getInstance();
+//	std::string decoded_str, last_str, curr_str;
+//
+//	int I, J;
+//	int newPos, rehash;
+//
+//
+//	I = *(enc.begin());
+//	last_str = m_symbolTable[I].getSymbol();
+//	decoded_str = last_str;
+//
+//	for(std::vector<unsigned int>::const_iterator it = ++enc.begin(); it != enc.end(); ++it){
+//		CForwardCounter attemptCounter;
+//		//rehash = -1;
+//		//Initial test, derived from the carray try
+//
+//		/*
+//		I = *(enc.begin());
+//		if( I  >= LZW_DICT_SIZE){ //Failure handler
+//			std::cerr << "Dictionary full, error code 1235" << std::endl;
+//		}
+//		if(m_symbolTable[I].getParent() != -2){ //if already in table
+//			curr_str = this->getString(I);
+//		}
+//		 */
+//
+//		newPos = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+//		rehash = newPos;
+//		while(
+//				m_symbolTable[rehash].getParent() != -2 && //leerer Knoten
+//				( J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent() )// Knoten enthält I und J bereits
+//			)
+//		{
+//			attemptCounter.count();
+//			rehash = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+//
+//			if(rehash == newPos){// kommt wieder beim ursprünglichen Hashwert an
+//				/*
+//				std::cout << "newPos: " << newPos << " rehash: " << rehash << std::endl; //DEBUG
+//				std::cout << "I:" << I << " J: " << J << " attempt: " << attemptCounter.getValue() << " String: " << in << std::endl; //DEBUG
+//				//std::vector<unsigned int> error;
+//				//return error;
+//
+//				break;*/
+//				exit(99);
+//			}
+//
+//			//DEBUG:
+//			/*
+//			if( !(J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent()) ){
+//				std::cout << m_symbolTable[rehash].getSymbol().front() << "\t" << m_symbolTable[rehash].getParent() << std::endl; //DEBUG
+//				std::cout << "J: " << J << " I: " << I << std::endl;//DEBUG
+//			}*/
+//		}
+//
+//
+//
+//	}
+
+std::string CTrieDec::decode(const std::vector<unsigned int>& enc){
+	if(enc.empty())return "";
+	CDoubleHashing& hash = CDoubleHashing::getInstance();
+	std::string decoded_str, last_str, curr_str;
+	int I, J;
+	int newPos, rehash;
+	int index;
+
+	index = *enc.begin();
+	last_str = getString(index);
+	decoded_str = last_str;
+
+	for(std::vector<unsigned int>::const_iterator it = ++enc.begin(); it != enc.end(); ++it){
+		CForwardCounter attemptCounter;
+		index = *it;
+		if(m_symbolTable[index].getParent() != -2){
+			curr_str = getString(index);
+			std::cout << curr_str << "\t" << index << std::endl;
+		}
+		else{
+			//std::cout << last_str << "\t"<< curr_str <<std::endl;
+			curr_str = last_str + last_str.front();
+		}
+		decoded_str += curr_str;
+		//Hash loop
+		I = find_last_knot(last_str);//need to find the exact knot
+		// std::cout << I << std::endl; // DEBUG
+		J = curr_str.front();
+		newPos = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+		rehash = newPos;
+		while(
+				m_symbolTable[rehash].getParent() != -2 && //leerer Knoten
+				( J != m_symbolTable[rehash].getSymbol().front() || I != m_symbolTable[rehash].getParent() )// Knoten enthält I und J bereits
+			)
+		{
+			attemptCounter.count();
+			rehash = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+
+			if(rehash == newPos){// kommt wieder beim ursprünglichen Hashwert an
+				exit(99);
+			}
+		}
+		if(m_symbolTable[rehash].getParent() != -2){
+			m_symbolTable[rehash].setParent(I);
+			m_symbolTable[rehash].setSymbol(intToString(J));
+		}else{
+			//std::cout << "Throw anscheinend falsch angehängt" << std::endl; //DEBUG
+		}
+		//end Hash loop
+
+		last_str = curr_str;
+		//std::cout << last_str << std::endl; //DEBUG
+	}
+	return decoded_str;
+}
+

@@ -1,0 +1,95 @@
+\hypertarget{class_c_double_hashing}{}\section{C\+Double\+Hashing Klassenreferenz}
+\label{class_c_double_hashing}\index{C\+Double\+Hashing@{C\+Double\+Hashing}}
+
+
+{\ttfamily \#include $<$C\+Double\+Hashing.\+hpp$>$}
+
+
+
+Zusammengehörigkeiten von C\+Double\+Hashing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_c_double_hashing__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_double_hashing_a4ffc5039f507c1def31ca5bc672ce8e2}{$\sim$\+C\+Double\+Hashing} ()
+\begin{DoxyCompactList}\small\item\em Standard Destruktor. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_c_double_hashing_a0ec6ff1eb94927284b8e6fe4f650ecf9}{hash} (unsigned int I, unsigned int J, unsigned int dict\+\_\+size, unsigned int attempt)
+\end{DoxyCompactItemize}
+\subsection*{Öffentliche, statische Methoden}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_double_hashing}{C\+Double\+Hashing} \& \hyperlink{class_c_double_hashing_a3917e940f9bac5c981156062eb2b1169}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_c_double_hashing_a4ffc5039f507c1def31ca5bc672ce8e2}\label{class_c_double_hashing_a4ffc5039f507c1def31ca5bc672ce8e2}} 
+\index{C\+Double\+Hashing@{C\+Double\+Hashing}!````~C\+Double\+Hashing@{$\sim$\+C\+Double\+Hashing}}
+\index{````~C\+Double\+Hashing@{$\sim$\+C\+Double\+Hashing}!C\+Double\+Hashing@{C\+Double\+Hashing}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Double\+Hashing()}{~CDoubleHashing()}}
+{\footnotesize\ttfamily C\+Double\+Hashing\+::$\sim$\+C\+Double\+Hashing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Standard Destruktor. 
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_c_double_hashing_a3917e940f9bac5c981156062eb2b1169}\label{class_c_double_hashing_a3917e940f9bac5c981156062eb2b1169}} 
+\index{C\+Double\+Hashing@{C\+Double\+Hashing}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!C\+Double\+Hashing@{C\+Double\+Hashing}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{class_c_double_hashing}{C\+Double\+Hashing} \& C\+Double\+Hashing\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Einzige Möglichkeit an ein Objekt dieser Klasse zu gelangen static -\/$>$ Singleton, nur Objekt der Klasse vorhanden \begin{DoxyReturn}{Rückgabe}
+Objekt der Klasse 
+\end{DoxyReturn}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_double_hashing_a3917e940f9bac5c981156062eb2b1169_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_double_hashing_a0ec6ff1eb94927284b8e6fe4f650ecf9}\label{class_c_double_hashing_a0ec6ff1eb94927284b8e6fe4f650ecf9}} 
+\index{C\+Double\+Hashing@{C\+Double\+Hashing}!hash@{hash}}
+\index{hash@{hash}!C\+Double\+Hashing@{C\+Double\+Hashing}}
+\subsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily unsigned int C\+Double\+Hashing\+::hash (\begin{DoxyParamCaption}\item[{unsigned int}]{I,  }\item[{unsigned int}]{J,  }\item[{unsigned int}]{dict\+\_\+size,  }\item[{unsigned int}]{attempt }\end{DoxyParamCaption})}
+
+individuelle Hashing Funktion, doppeltes Hashing 
+\begin{DoxyParams}{Parameter}
+{\em I} & Elternposition \\
+\hline
+{\em J} & A\+S\+C\+II Wert des neu eingelesenen Zeichens \\
+\hline
+{\em dict\+\_\+size} & Größe des Dictionarys \\
+\hline
+{\em attempt} & Anzahl der Hashversuches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Hashwert 
+\end{DoxyReturn}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_double_hashing_a0ec6ff1eb94927284b8e6fe4f650ecf9_icgraph}
+\end{center}
+\end{figure}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_double_hashing_8hpp}{C\+Double\+Hashing.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_double_hashing_8cpp}{C\+Double\+Hashing.\+cpp}\end{DoxyCompactItemize}

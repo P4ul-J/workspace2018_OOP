@@ -1,0 +1,76 @@
+\hypertarget{class_c_enc}{}\section{C\+Enc Klassenreferenz}
+\label{class_c_enc}\index{C\+Enc@{C\+Enc}}
+
+
+Abstrakte Basisklasse für die Encoder.  
+
+
+
+
+{\ttfamily \#include $<$C\+Enc.\+hpp$>$}
+
+
+
+Klassendiagramm für C\+Enc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_c_enc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von C\+Enc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_enc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual vector$<$ unsigned int $>$ \hyperlink{class_c_enc_a745a77d134a9abaaf788d47b7a235229}{encode} (const string \&in)=0
+\item 
+virtual \hyperlink{class_c_enc_a95603c8fc5edf44032b8f7aad8be6517}{$\sim$\+C\+Enc} ()
+\end{DoxyCompactItemize}
+\subsection*{Weitere Geerbte Elemente}
+
+
+\subsection{Ausführliche Beschreibung}
+Abstrakte Basisklasse für die Encoder. 
+
+Abstrakte Basisklasse für die Encodierung. \hyperlink{class_c_enc}{C\+Enc} erbt von \hyperlink{class_c_l_z_w}{C\+L\+ZW}. Basisklasse der Encoderklassen \hyperlink{class_c_array_enc}{C\+Array\+Enc} und \hyperlink{class_c_trie_enc}{C\+Trie\+Enc}. Von dieser Klasse \hyperlink{class_c_enc}{C\+Enc} selbst können keine Instanzen erstellt werden, sie ist abstrakt. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_c_enc_a95603c8fc5edf44032b8f7aad8be6517}\label{class_c_enc_a95603c8fc5edf44032b8f7aad8be6517}} 
+\index{C\+Enc@{C\+Enc}!````~C\+Enc@{$\sim$\+C\+Enc}}
+\index{````~C\+Enc@{$\sim$\+C\+Enc}!C\+Enc@{C\+Enc}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Enc()}{~CEnc()}}
+{\footnotesize\ttfamily C\+Enc\+::$\sim$\+C\+Enc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_c_enc_a745a77d134a9abaaf788d47b7a235229}\label{class_c_enc_a745a77d134a9abaaf788d47b7a235229}} 
+\index{C\+Enc@{C\+Enc}!encode@{encode}}
+\index{encode@{encode}!C\+Enc@{C\+Enc}}
+\subsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily virtual vector$<$unsigned int$>$ C\+Enc\+::encode (\begin{DoxyParamCaption}\item[{const string \&}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+encodiert (komprimiert) den String in mit Hilfe des L\+Z\+W-\/\+Algorithmus 
+\begin{DoxyParams}{Parameter}
+{\em in} & String der zu encodierenden Zeichenfolge \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Vektor der zu übertragenden Indexwerte 
+\end{DoxyReturn}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_enc_8hpp}{C\+Enc.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_enc_8cpp}{C\+Enc.\+cpp}\end{DoxyCompactItemize}

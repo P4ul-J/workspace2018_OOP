@@ -1,0 +1,64 @@
+/*!\file CTrieEnc.cpp
+ * \brief
+ *
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+
+#include "CTrieEnc.hpp"
+//todo
+CTrieEnc::CTrieEnc() {
+//	char letter{0};
+//
+//		for(m_index = 0; m_index < 256; m_index++, letter++){
+//			m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+//		}
+	/*
+	m_symbolTable = new CKnot[256];
+	for(int i = 0; i < 256 ; i++){
+		m_symbolTable[i].setSymbol(intToString(i));
+		m_symbolTable[i].setParent(-1);
+	}*/
+	m_symbolTable = new CKnot[LZW_DICT_SIZE];
+	for(int i = 0; i < 256 ; i++){
+			m_symbolTable[i].setSymbol(intToString(i));
+			m_symbolTable[i].setParent(-1);
+	}
+	/*Nicht notwendig, da automatisch von konstruktor von CKnot erledigt
+	for(int i = 256; i < LZW_DICT_SIZE; i++){
+		m_symbolTable[i].setParent(-2);
+		m_symbolTable[i].setSymbol("");
+	}*/
+}
+
+
+
+//todo
+std::vector<unsigned int> CTrieEnc::encode (const std::string& in){
+	std::vector<unsigned int> send;
+
+	CDoubleHashing& hash = CDoubleHashing::getInstance();
+	int I, J;//I Parent-address, J char
+	//char curr_char;
+	if(in == "")return send;
+
+	int newPos, rehash;
+
+	//curr_char = in.front();
+	J = in.front();
+	I = J; //Value of J is the Position of the Knot because of how the dict is initialized
+	for(std::string::const_iterator it = ++in.begin(); it != in.end(); ++it){
+		CForwardCounter attemptCounter;
+
+		J = *it;
+
+		newPos = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+		while(   m_symbolTable[newPos].getSymbol() == "" && (J != m_symbolTable[newPos].getSymbol().front() && I != m_symbolTable[newPos].getParent() )   && newPos != rehash ){
+
+		}
+
+	}
+
+	return send;
+}
+

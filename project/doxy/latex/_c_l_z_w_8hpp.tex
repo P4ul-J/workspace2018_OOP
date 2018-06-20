@@ -1,0 +1,52 @@
+\hypertarget{_c_l_z_w_8hpp}{}\section{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\+C\+L\+ZW.hpp-\/\+Dateireferenz}
+\label{_c_l_z_w_8hpp}\index{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\+C\+L\+Z\+W.\+hpp@{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\+C\+L\+Z\+W.\+hpp}}
+
+
+\hyperlink{_c_l_z_w_8hpp}{C\+L\+Z\+W.\+hpp} Basisklasse für L\+ZW Encoder und Decoder.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include-\/\+Abhängigkeitsdiagramm für C\+L\+Z\+W.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{_c_l_z_w_8hpp__incl}
+\end{center}
+\end{figure}
+Dieser Graph zeigt, welche Datei direkt oder indirekt diese Datei enthält\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_c_l_z_w_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_l_z_w}{C\+L\+ZW}
+\begin{DoxyCompactList}\small\item\em \hyperlink{_c_l_z_w_8hpp}{C\+L\+Z\+W.\+hpp} Basisklasse für L\+ZW Encoder und Decoder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Makrodefinitionen}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_l_z_w_8hpp_acf42230e7a1c805d869f67560ce63827}{L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE}~2000
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+\hyperlink{_c_l_z_w_8hpp}{C\+L\+Z\+W.\+hpp} Basisklasse für L\+ZW Encoder und Decoder. 
+
+Diese Basisklasse zu den abstrakten Klassen \hyperlink{class_c_enc}{C\+Enc} und \hyperlink{class_c_dec}{C\+Dec} stellt zwei statische Methoden und eine Konstante zur Verfügung. int\+To\+String wandelt von Integer nach String und char\+To\+Int wandelt von char nach Integer Beide statischen Funktionen werden verwendet zur Wandlung von Zeichen in ihre Indexwerte.
+
+L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE legt die Größe des Dictionarys fest. 
+
+\subsection{Makro-\/\+Dokumentation}
+\mbox{\Hypertarget{_c_l_z_w_8hpp_acf42230e7a1c805d869f67560ce63827}\label{_c_l_z_w_8hpp_acf42230e7a1c805d869f67560ce63827}} 
+\index{C\+L\+Z\+W.\+hpp@{C\+L\+Z\+W.\+hpp}!L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE@{L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE}}
+\index{L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE@{L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE}!C\+L\+Z\+W.\+hpp@{C\+L\+Z\+W.\+hpp}}
+\subsubsection{\texorpdfstring{L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE}{LZW\_DICT\_SIZE}}
+{\footnotesize\ttfamily \#define L\+Z\+W\+\_\+\+D\+I\+C\+T\+\_\+\+S\+I\+ZE~2000}
+
+Größe des Arrays für Dictionary festlegen Größe des Dictionary bei 16 bit 65636 Praktikable Größe für kürzere Rechenzeit 2000 Anmerkung\+: Versuche, diese Konstante anders als über Präprozessor Deklarative festzulegen (statische Variable, Konstante in main.\+cpp) scheitern, da die Initialisierung für das \hyperlink{class_c_array}{C\+Array} zu spät stattfindet. 

@@ -1,0 +1,95 @@
+/*!\file CTrieEnc.cpp
+ * \brief
+ *
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+#include <iostream>
+#include "CTrieEnc.hpp"
+//todo
+CTrieEnc::CTrieEnc() {
+//	char letter{0};
+//
+//		for(m_index = 0; m_index < 256; m_index++, letter++){
+//			m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+//		}
+	/*
+	m_symbolTable = new CKnot[256];
+	for(int i = 0; i < 256 ; i++){
+		m_symbolTable[i].setSymbol(intToString(i));
+		m_symbolTable[i].setParent(-1);
+	}*/
+	m_symbolTable = new CKnot[LZW_DICT_SIZE];
+	for(int i = 0; i < 256 ; i++){
+			m_symbolTable[i].setSymbol(intToString(i));
+			m_symbolTable[i].setParent(-1);
+	}
+	/*Nicht notwendig, da automatisch von konstruktor von CKnot erledigt
+	for(int i = 256; i < LZW_DICT_SIZE; i++){
+		m_symbolTable[i].setParent(-2);
+		m_symbolTable[i].setSymbol("");
+	}*/
+}
+
+
+
+//todo
+std::vector<unsigned int> CTrieEnc::encode (const std::string& in){
+	std::vector<unsigned int> send;
+
+	CDoubleHashing& hash = CDoubleHashing::getInstance();
+	int I, J;//I Parent-address, J char
+	//char curr_char;
+	if(in == "")return send;
+
+	int newPos, rehash;
+
+	//curr_char = in.front();
+	J = in.front();
+	I = J; //Value of J is the Position of the Knot because of how the dict is initialized
+	for(std::string::const_iterator it = ++in.begin(); it != in.end(); ++it){
+		CForwardCounter attemptCounter;
+		rehash = -1;
+		J = *it;
+		//std::cout << J << "\t" << *it << std::endl; //DEBUG working properly
+//		if(it+1 == in.end()){letztes Zeichen
+//
+//		}
+
+		newPos = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+		rehash = newPos;
+		while(
+				m_symbolTable[newPos].getParent() == -2 && //leerer Knoten
+				( J != m_symbolTable[rehash].getSymbol().front() && I != m_symbolTable[rehash].getParent() ) // Knoten enthält I und J bereits
+			)
+		{
+			attemptCounter.count();
+			rehash = hash.hash(I, J, LZW_DICT_SIZE, attemptCounter.getValue());
+
+			if(rehash == newPos){// kommt wieder beim ursprünglichen Hashwert an
+
+				std::cout << "newPos: " << newPos << " rehash: " << rehash << std::endl; //DEBUG
+				std::cout << "I:" << I << " J: " << J << " attempt: " << attemptCounter.getValue() << " String: " << in << std::endl; //DEBUG
+				//std::vector<unsigned int> error;
+				//return error;
+				//exit(99);
+				break;
+			}
+		}
+		//std::cout << I << "\t" << J << std::endl; //DEBUG
+		if(m_symbolTable[rehash].getParent() == -2){
+			m_symbolTable[rehash].setParent(I);
+			m_symbolTable[rehash].setSymbol( intToString(J) );
+			send.push_back(I);
+			I = J;
+		}
+		if(J != m_symbolTable[rehash].getSymbol().front() && I != m_symbolTable[rehash].getParent()){
+			I = J;
+		}
+
+	}
+	send.push_back(I);
+
+	return send;
+}
+

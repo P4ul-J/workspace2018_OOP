@@ -1,0 +1,20 @@
+/*!\file CArrayDec.hpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CARRAYDEC_HPP_
+#define CARRAYDEC_HPP_
+
+/*!
+ *
+ */
+class CArrayDec {
+public:
+	CArrayDec();
+	virtual ~CArrayDec();
+};
+
+#endif /* CARRAYDEC_HPP_ */

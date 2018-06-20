@@ -1,0 +1,311 @@
+\hypertarget{main_praktikum_8cpp}{}\section{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/main\+Praktikum.cpp-\/\+Dateireferenz}
+\label{main_praktikum_8cpp}\index{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/main\+Praktikum.\+cpp@{C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/main\+Praktikum.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include \char`\"{}gtest/gtest.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+L\+Z\+W.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Enc.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Dec.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Entry.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Array.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}X\+Out\+Of\+Bounds.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Knot.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Double\+Hashing.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Counter.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Forward\+Counter.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Array\+Enc.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Array\+Dec.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Trie\+Enc.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}C\+Trie\+Dec.\+hpp\char`\"{}}\newline
+Include-\/\+Abhängigkeitsdiagramm für main\+Praktikum.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Makrodefinitionen}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_praktikum_8cpp_aee4a22ef319744feb4ad641ca979681d}{T\+E\+I\+L\+\_\+2}
+\item 
+\#define \hyperlink{main_praktikum_8cpp_a59832b5b73a475c418e29280d0795965}{D\+E\+B\+U\+Ge}
+\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255}{T\+E\+ST} (C\+Forward\+Counter\+Test, Initial\+Zero)
+\item 
+\hyperlink{main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4}{T\+E\+ST} (C\+Forward\+Counter\+Test, Counting)
+\item 
+\hyperlink{main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767}{T\+E\+ST} (C\+Entry\+Test, Initial\+Empty)
+\item 
+\hyperlink{main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f}{T\+E\+ST} (C\+Entry\+Test, Set\+Symbol)
+\item 
+\hyperlink{main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1}{T\+E\+ST} (C\+Entry\+Test, Count\+Instances)
+\item 
+\hyperlink{main_praktikum_8cpp_a1d980bd09bc4f5da2079db25510896af}{T\+E\+ST} (C\+Array\+Test, Array)
+\item 
+\hyperlink{main_praktikum_8cpp_aaa419f08289451f94046bf9d76a3a3c8}{T\+E\+ST} (C\+Array\+Test, Exception)
+\item 
+\hyperlink{main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476}{T\+E\+ST} (C\+Knot\+Test, symbol)
+\item 
+\hyperlink{main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a}{T\+E\+ST} (C\+Knot\+Test, parent)
+\item 
+\hyperlink{main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7}{T\+E\+ST} (C\+Double\+Hashing\+Test, Simple\+Hashing)
+\item 
+\hyperlink{main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f}{T\+E\+ST} (C\+Double\+Hashing\+Test, Double\+Hashing)
+\item 
+\hyperlink{main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9}{T\+E\+ST} (C\+Trie\+Test, Encoder)
+\item 
+\hyperlink{main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103}{T\+E\+ST} (C\+Trie\+Test, Decoder)
+\item 
+void \hyperlink{main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003}{build\+Phrases} ()
+\item 
+int \hyperlink{main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, vector$<$ unsigned int $>$ $>$ \hyperlink{main_praktikum_8cpp_a2c9d5fec968235f5953318db62995d0d}{test\+Phrases\+List}
+\item 
+map$<$ string, vector$<$ unsigned int $>$ $>$ \hyperlink{main_praktikum_8cpp_aef2b43e7b9b74438d9b09ee115ccf39a}{test\+Phrases\+Trie}
+\end{DoxyCompactItemize}
+
+
+\subsection{Makro-\/\+Dokumentation}
+\mbox{\Hypertarget{main_praktikum_8cpp_a59832b5b73a475c418e29280d0795965}\label{main_praktikum_8cpp_a59832b5b73a475c418e29280d0795965}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!D\+E\+B\+U\+Ge@{D\+E\+B\+U\+Ge}}
+\index{D\+E\+B\+U\+Ge@{D\+E\+B\+U\+Ge}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{D\+E\+B\+U\+Ge}{DEBUGe}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+Ge}
+
+\mbox{\Hypertarget{main_praktikum_8cpp_aee4a22ef319744feb4ad641ca979681d}\label{main_praktikum_8cpp_aee4a22ef319744feb4ad641ca979681d}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+I\+L\+\_\+2@{T\+E\+I\+L\+\_\+2}}
+\index{T\+E\+I\+L\+\_\+2@{T\+E\+I\+L\+\_\+2}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+I\+L\+\_\+2}{TEIL\_2}}
+{\footnotesize\ttfamily \#define T\+E\+I\+L\+\_\+2}
+
+Unit-\/\+Tests fürs Praktikum $\ast$ 
+
+\subsection{Dokumentation der Funktionen}
+\mbox{\Hypertarget{main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003}\label{main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!build\+Phrases@{build\+Phrases}}
+\index{build\+Phrases@{build\+Phrases}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{build\+Phrases()}{buildPhrases()}}
+{\footnotesize\ttfamily void build\+Phrases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!main@{main}}
+\index{main@{main}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255}\label{main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Forward\+Counter\+Test}]{,  }\item[{Initial\+Zero}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_cgraph}
+\end{center}
+\end{figure}
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4}\label{main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Forward\+Counter\+Test}]{,  }\item[{Counting}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767}\label{main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Entry\+Test}]{,  }\item[{Initial\+Empty}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f}\label{main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Entry\+Test}]{,  }\item[{Set\+Symbol}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1}\label{main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Entry\+Test}]{,  }\item[{Count\+Instances}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a1d980bd09bc4f5da2079db25510896af}\label{main_praktikum_8cpp_a1d980bd09bc4f5da2079db25510896af}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Array\+Test}]{,  }\item[{Array}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_praktikum_8cpp_aaa419f08289451f94046bf9d76a3a3c8}\label{main_praktikum_8cpp_aaa419f08289451f94046bf9d76a3a3c8}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Array\+Test}]{,  }\item[{Exception}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476}\label{main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Knot\+Test}]{,  }\item[{symbol}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a}\label{main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Knot\+Test}]{,  }\item[{parent}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7}\label{main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Double\+Hashing\+Test}]{,  }\item[{Simple\+Hashing}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f}\label{main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Double\+Hashing\+Test}]{,  }\item[{Double\+Hashing}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9}\label{main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Trie\+Test}]{,  }\item[{Encoder}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103}\label{main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily T\+E\+ST (\begin{DoxyParamCaption}\item[{C\+Trie\+Test}]{,  }\item[{Decoder}]{ }\end{DoxyParamCaption})}
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variablen-\/\+Dokumentation}
+\mbox{\Hypertarget{main_praktikum_8cpp_a2c9d5fec968235f5953318db62995d0d}\label{main_praktikum_8cpp_a2c9d5fec968235f5953318db62995d0d}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!test\+Phrases\+List@{test\+Phrases\+List}}
+\index{test\+Phrases\+List@{test\+Phrases\+List}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{test\+Phrases\+List}{testPhrasesList}}
+{\footnotesize\ttfamily map$<$string, vector$<$unsigned int$>$ $>$ test\+Phrases\+List}
+
+\mbox{\Hypertarget{main_praktikum_8cpp_aef2b43e7b9b74438d9b09ee115ccf39a}\label{main_praktikum_8cpp_aef2b43e7b9b74438d9b09ee115ccf39a}} 
+\index{main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}!test\+Phrases\+Trie@{test\+Phrases\+Trie}}
+\index{test\+Phrases\+Trie@{test\+Phrases\+Trie}!main\+Praktikum.\+cpp@{main\+Praktikum.\+cpp}}
+\subsubsection{\texorpdfstring{test\+Phrases\+Trie}{testPhrasesTrie}}
+{\footnotesize\ttfamily map$<$string, vector$<$unsigned int$>$ $>$ test\+Phrases\+Trie}
+

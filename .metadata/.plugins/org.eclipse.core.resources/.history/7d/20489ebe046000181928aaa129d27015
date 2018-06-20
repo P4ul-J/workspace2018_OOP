@@ -1,0 +1,22 @@
+/*!\file CArrayEnc.cpp
+ * \brief
+ *
+ *  Created on: 24.05.2018
+ *      Author: diamo
+ */
+
+#include "CArrayEnc.hpp"
+
+CArrayEnc::CArrayEnc() {
+	char letter{0};
+	for(int i = 0; i < 256; i++){
+		m_symbolTable[ charToInt(letter) ].setSymbol( intToString( charToInt(letter) ) );
+	}
+}
+
+std::vector<unsigned int> CArrayEnc::encode(const std::string& in){
+
+}
+
+
+

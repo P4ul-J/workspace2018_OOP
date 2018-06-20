@@ -1,0 +1,44 @@
+/*!\file CTrieDec.hpp
+ * \brief LZW Decoder, Dictionary implementiert als Trie
+ *
+ *	Dieses File enthält die Klasse CTrieDec
+ *	Notwendig für Teil 2 des Praktikums
+ *  Created on: 29.05.2018
+ *      Author: diamo
+ */
+
+#ifndef CTRIEDEC_HPP_
+#define CTRIEDEC_HPP_
+
+#include "CKnot.hpp"
+#include <vector>
+#include "CDoubleHashing.hpp"
+#include "CForwardCounter.hpp"
+#include "CDec.hpp"
+/*!
+ * \class CTrieDec
+ * \brief LZW Decoder
+ * Klasse für die Decodierung
+ * erbt von CEnc
+ *
+ */
+class CTrieDec : public CDec{
+private:
+	//! Dictionary in dem Knoten des Tries gespeichert werden, Größe der Tabelle: LZW_DICT_SIZE
+	CKnot* m_symbolTable;
+	std::string getString(int knot);
+	int find_last_knot(const std::string in);
+public:
+	/*!
+		 * Paramenterloser Konstruktor der Klasse
+		 * Initialisiert das Dictionary
+		 */
+	CTrieDec();
+
+
+	std::string decode(const std::vector<unsigned int>& enc);
+
+
+};
+
+#endif /* CTRIEDEC_HPP_ */

@@ -1,0 +1,112 @@
+\hypertarget{class_c_array}{}\section{C\+Array$<$ T, N $>$ Template-\/\+Klassenreferenz}
+\label{class_c_array}\index{C\+Array$<$ T, N $>$@{C\+Array$<$ T, N $>$}}
+
+
+Erzeugt ein Array vom Typ T mit N Elementen Es existiert ein Kopierkonstruktor, der eine tiefe Kopie eines anderen Objekts gleichen Typs erzeugt. Mithilfe des operators \mbox{[}\mbox{]} kann man direkt auf eine Referenz eines Elementes von entries zugreifen.  
+
+
+
+
+{\ttfamily \#include $<$C\+Array.\+hpp$>$}
+
+
+
+Klassendiagramm für C\+Array$<$ T, N $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{class_c_array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von C\+Array$<$ T, N $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_c_array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_array_aa2f1336f8d60cfd1396a920a04a0e0bb}{C\+Array} ()
+\begin{DoxyCompactList}\small\item\em Paramenterloser Standartkonstruktor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_array_add790ca71782225282e735fabaa36626}{C\+Array} (const \hyperlink{class_c_array}{C\+Array}$<$ T, N $>$ \&copy)
+\begin{DoxyCompactList}\small\item\em Kopierkonstruktur Erzeugt eine tiefe Kopie von copy. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_array_a1aa64db8be620da54c5987f16544a206}{$\sim$\+C\+Array} ()
+\begin{DoxyCompactList}\small\item\em Destruktor der Klasse löscht das gesamte Array und macht entries anschließend zum nullptr. \end{DoxyCompactList}\item 
+T \& \hyperlink{class_c_array_a81dc8949159e2f4b213d33a5d2b5aec7}{operator\mbox{[}$\,$\mbox{]}} (unsigned int index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+\subsubsection*{template$<$typename T, unsigned int N$>$\newline
+class C\+Array$<$ T, N $>$}
+
+Erzeugt ein Array vom Typ T mit N Elementen Es existiert ein Kopierkonstruktor, der eine tiefe Kopie eines anderen Objekts gleichen Typs erzeugt. Mithilfe des operators \mbox{[}\mbox{]} kann man direkt auf eine Referenz eines Elementes von entries zugreifen. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{class_c_array_aa2f1336f8d60cfd1396a920a04a0e0bb}\label{class_c_array_aa2f1336f8d60cfd1396a920a04a0e0bb}} 
+\index{C\+Array@{C\+Array}!C\+Array@{C\+Array}}
+\index{C\+Array@{C\+Array}!C\+Array@{C\+Array}}
+\subsubsection{\texorpdfstring{C\+Array()}{CArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , unsigned int N$>$ \\
+\hyperlink{class_c_array}{C\+Array}$<$ T, N $>$\+::\hyperlink{class_c_array}{C\+Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Paramenterloser Standartkonstruktor. 
+
+\mbox{\Hypertarget{class_c_array_add790ca71782225282e735fabaa36626}\label{class_c_array_add790ca71782225282e735fabaa36626}} 
+\index{C\+Array@{C\+Array}!C\+Array@{C\+Array}}
+\index{C\+Array@{C\+Array}!C\+Array@{C\+Array}}
+\subsubsection{\texorpdfstring{C\+Array()}{CArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T, unsigned int N$>$ \\
+\hyperlink{class_c_array}{C\+Array}$<$ T, N $>$\+::\hyperlink{class_c_array}{C\+Array} (\begin{DoxyParamCaption}\item[{const \hyperlink{class_c_array}{C\+Array}$<$ T, N $>$ \&}]{copy }\end{DoxyParamCaption})}
+
+
+
+Kopierkonstruktur Erzeugt eine tiefe Kopie von copy. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em copy} & Referenz auf zu kopierendes Objekt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_array_a1aa64db8be620da54c5987f16544a206}\label{class_c_array_a1aa64db8be620da54c5987f16544a206}} 
+\index{C\+Array@{C\+Array}!````~C\+Array@{$\sim$\+C\+Array}}
+\index{````~C\+Array@{$\sim$\+C\+Array}!C\+Array@{C\+Array}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Array()}{~CArray()}}
+{\footnotesize\ttfamily template$<$typename T , unsigned int N$>$ \\
+\hyperlink{class_c_array}{C\+Array}$<$ T, N $>$\+::$\sim$\hyperlink{class_c_array}{C\+Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destruktor der Klasse löscht das gesamte Array und macht entries anschließend zum nullptr. 
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{class_c_array_a81dc8949159e2f4b213d33a5d2b5aec7}\label{class_c_array_a81dc8949159e2f4b213d33a5d2b5aec7}} 
+\index{C\+Array@{C\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!C\+Array@{C\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$typename T , unsigned int N$>$ \\
+T \& \hyperlink{class_c_array}{C\+Array}$<$ T, N $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})}
+
+Zugriff auf ein einzelnes Element des Feldes entries 
+\begin{DoxyParams}{Parameter}
+{\em index} & Stelle des Zugriffs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Referenz auf das Element 
+\end{DoxyReturn}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_array_8hpp}{C\+Array.\+hpp}\end{DoxyCompactItemize}

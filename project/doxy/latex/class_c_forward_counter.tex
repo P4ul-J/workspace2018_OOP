@@ -30,11 +30,8 @@ Zusammengehörigkeiten von C\+Forward\+Counter\+:
 \hyperlink{class_c_forward_counter_aeda1b05d715820f61e377a2c6fa52b2e}{C\+Forward\+Counter} ()
 \item 
 void \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{count} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Erhöht Zählerstand um 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-
-\subsection{Ausführliche Beschreibung}
-\hyperlink{class_c_forward_counter}{C\+Forward\+Counter}, überschreibt die Memberfunktion \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{count()} aus Basisklasse \hyperlink{class_c_counter}{C\+Counter}, so dass diese den internen Zählerstand um 1 inkrementiert. 
 
 \subsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{class_c_forward_counter_aeda1b05d715820f61e377a2c6fa52b2e}\label{class_c_forward_counter_aeda1b05d715820f61e377a2c6fa52b2e}} 
@@ -43,7 +40,7 @@ void \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{count
 \subsubsection{\texorpdfstring{C\+Forward\+Counter()}{CForwardCounter()}}
 {\footnotesize\ttfamily C\+Forward\+Counter\+::\+C\+Forward\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Parameterloser Konstruktor, setzt den Zählerstand auf 0 
+
 
 \subsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}\label{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}} 
@@ -52,21 +49,33 @@ Parameterloser Konstruktor, setzt den Zählerstand auf 0
 \subsubsection{\texorpdfstring{count()}{count()}}
 {\footnotesize\ttfamily void C\+Forward\+Counter\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Zähler, inkrementiert den Zählerstand um 1 
+
+
+Erhöht Zählerstand um 1. 
+
+
 
 Erneute Implementation von \hyperlink{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}{C\+Counter}.
 
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86_cgraph}
+\end{center}
+\end{figure}
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86_icgraph}
+\includegraphics[width=350pt]{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86_icgraph}
 \end{center}
 \end{figure}
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\hyperlink{_c_forward_counter_8hpp}{C\+Forward\+Counter.\+hpp}\item 
-C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\hyperlink{_c_forward_counter_8cpp}{C\+Forward\+Counter.\+cpp}\end{DoxyCompactItemize}
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_forward_counter_8hpp}{C\+Forward\+Counter.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_forward_counter_8cpp}{C\+Forward\+Counter.\+cpp}\end{DoxyCompactItemize}

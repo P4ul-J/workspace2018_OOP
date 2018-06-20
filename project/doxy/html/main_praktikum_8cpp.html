@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Übung Objektorientierte Programmierung: C:/portableDevEnv_2017/workspace2017/project/src/mainPraktikum.cpp-Dateireferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Übung Objektorientierte Programmierung
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">First Version 2017</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_praktikum_8cpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Makrodefinitionen</a> &#124;
+<a href="#func-members">Funktionen</a> &#124;
+<a href="#var-members">Variablen</a>  </div>
+  <div class="headertitle">
+<div class="title">mainPraktikum.cpp-Dateireferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_l_z_w_8hpp_source.html">CLZW.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_enc_8hpp_source.html">CEnc.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_dec_8hpp_source.html">CDec.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_entry_8hpp_source.html">CEntry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_array_8hpp_source.html">CArray.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_x_out_of_bounds_8hpp_source.html">XOutOfBounds.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_knot_8hpp_source.html">CKnot.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_double_hashing_8hpp_source.html">CDoubleHashing.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_counter_8hpp_source.html">CCounter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_forward_counter_8hpp_source.html">CForwardCounter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_array_enc_8hpp_source.html">CArrayEnc.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_array_dec_8hpp_source.html">CArrayDec.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_trie_enc_8hpp_source.html">CTrieEnc.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_trie_dec_8hpp_source.html">CTrieDec.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include-Abhängigkeitsdiagramm für mainPraktikum.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp__incl.png" border="0" usemap="#_c_1_2portable_dev_env__2017_2workspace2017_2project_2src_2main_praktikum_8cpp" alt=""/></div>
+<map name="_c_1_2portable_dev_env__2017_2workspace2017_2project_2src_2main_praktikum_8cpp" id="_c_1_2portable_dev_env__2017_2workspace2017_2project_2src_2main_praktikum_8cpp">
+<area shape="rect" id="node7" href="_c_l_z_w_8hpp.html" title="CLZW.hpp Basisklasse für LZW Encoder und Decoder. " alt="" coords="304,259,387,285"/>
+<area shape="rect" id="node8" href="_c_enc_8hpp.html" title="Klasse CEnc Abstrakte Basisklasse für Encodierung. " alt="" coords="254,184,333,211"/>
+<area shape="rect" id="node9" href="_c_dec_8hpp.html" title="Klasse CDec Abstrakte Basisklasse für Decodierung. " alt="" coords="510,184,589,211"/>
+<area shape="rect" id="node10" href="_c_entry_8hpp.html" title="Enthält die Basisklasse CEntry Wird später von CKnot benötigt. " alt="" coords="665,259,751,285"/>
+<area shape="rect" id="node11" href="_c_array_8hpp.html" title="Template&#45;Klasse CArray Erzeugt ein Array vom Typ T mit N Elementen. " alt="" coords="715,184,802,211"/>
+<area shape="rect" id="node12" href="_x_out_of_bounds_8hpp.html" title="Enthält die Klasse XOutOfBounds Es handelt sich hierbei um eine Klasse die Ausnahmeobjekte erstellt..." alt="" coords="1478,259,1610,285"/>
+<area shape="rect" id="node14" href="_c_knot_8hpp.html" title="Enthält die Klasse CEntry Erbt von CKnot. " alt="" coords="877,184,960,211"/>
+<area shape="rect" id="node15" href="_c_double_hashing_8hpp.html" title="Klasse zum Hashen. " alt="" coords="1086,184,1229,211"/>
+<area shape="rect" id="node16" href="_c_counter_8hpp.html" title="Created on: 06.04.2018 Author: diamo. " alt="" coords="1635,259,1736,285"/>
+<area shape="rect" id="node17" href="_c_forward_counter_8hpp.html" title="Created on: 07.04.2018 Author: diamo. " alt="" coords="1355,184,1501,211"/>
+<area shape="rect" id="node18" href="_c_array_enc_8hpp.html" title="LZW Encoder, Dictionary implementiert als Array. " alt="" coords="358,109,469,136"/>
+<area shape="rect" id="node19" href="_c_array_dec_8hpp.html" title="LZW Decoder, Dictionary implementiert als Array. " alt="" coords="614,109,725,136"/>
+<area shape="rect" id="node20" href="_c_trie_enc_8hpp.html" title="LZW Encoder, Dictionary implementiert als Trie. " alt="" coords="947,109,1047,136"/>
+<area shape="rect" id="node21" href="_c_trie_dec_8hpp.html" title="LZW Decoder, Dictionary implementiert als Trie. " alt="" coords="1123,109,1223,136"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Makrodefinitionen</h2></td></tr>
+<tr class="memitem:aee4a22ef319744feb4ad641ca979681d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#aee4a22ef319744feb4ad641ca979681d">TEIL_2</a></td></tr>
+<tr class="separator:aee4a22ef319744feb4ad641ca979681d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59832b5b73a475c418e29280d0795965"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a59832b5b73a475c418e29280d0795965">DEBUGe</a></td></tr>
+<tr class="separator:a59832b5b73a475c418e29280d0795965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funktionen</h2></td></tr>
+<tr class="memitem:a4bab75c637cecac537a51698d0942255"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a4bab75c637cecac537a51698d0942255">TEST</a> (CForwardCounterTest, InitialZero)</td></tr>
+<tr class="separator:a4bab75c637cecac537a51698d0942255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd688014964b047d6ab75ade07019bc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#acd688014964b047d6ab75ade07019bc4">TEST</a> (CForwardCounterTest, Counting)</td></tr>
+<tr class="separator:acd688014964b047d6ab75ade07019bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d12b20863d48d797ab380a75fbc767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#ad5d12b20863d48d797ab380a75fbc767">TEST</a> (CEntryTest, InitialEmpty)</td></tr>
+<tr class="separator:ad5d12b20863d48d797ab380a75fbc767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a140596f9c5c1c6c1311398894ad2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a10a140596f9c5c1c6c1311398894ad2f">TEST</a> (CEntryTest, SetSymbol)</td></tr>
+<tr class="separator:a10a140596f9c5c1c6c1311398894ad2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d367c74d2562e3de1d4918303eadc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#ad5d367c74d2562e3de1d4918303eadc1">TEST</a> (CEntryTest, CountInstances)</td></tr>
+<tr class="separator:ad5d367c74d2562e3de1d4918303eadc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d980bd09bc4f5da2079db25510896af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a1d980bd09bc4f5da2079db25510896af">TEST</a> (CArrayTest, Array)</td></tr>
+<tr class="separator:a1d980bd09bc4f5da2079db25510896af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa419f08289451f94046bf9d76a3a3c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#aaa419f08289451f94046bf9d76a3a3c8">TEST</a> (CArrayTest, Exception)</td></tr>
+<tr class="separator:aaa419f08289451f94046bf9d76a3a3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ced2fe8a0d361d63e86cbba4659476"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a84ced2fe8a0d361d63e86cbba4659476">TEST</a> (CKnotTest, symbol)</td></tr>
+<tr class="separator:a84ced2fe8a0d361d63e86cbba4659476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7aaae733712481d4c66e2de97adc9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#adc7aaae733712481d4c66e2de97adc9a">TEST</a> (CKnotTest, parent)</td></tr>
+<tr class="separator:adc7aaae733712481d4c66e2de97adc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7909ae2a125e79069173f33eddcdbbb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a7909ae2a125e79069173f33eddcdbbb7">TEST</a> (CDoubleHashingTest, SimpleHashing)</td></tr>
+<tr class="separator:a7909ae2a125e79069173f33eddcdbbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6826b72032171a5da0f96710c47770f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#ad6826b72032171a5da0f96710c47770f">TEST</a> (CDoubleHashingTest, DoubleHashing)</td></tr>
+<tr class="separator:ad6826b72032171a5da0f96710c47770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe798561e31c621ee561fa79f16a12c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#afe798561e31c621ee561fa79f16a12c9">TEST</a> (CTrieTest, Encoder)</td></tr>
+<tr class="separator:afe798561e31c621ee561fa79f16a12c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c935d5e4b57967cba5961c1d52f5103"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a9c935d5e4b57967cba5961c1d52f5103">TEST</a> (CTrieTest, Decoder)</td></tr>
+<tr class="separator:a9c935d5e4b57967cba5961c1d52f5103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b41017558113eb3b4a7ebb326e4003"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a70b41017558113eb3b4a7ebb326e4003">buildPhrases</a> ()</td></tr>
+<tr class="separator:a70b41017558113eb3b4a7ebb326e4003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variablen</h2></td></tr>
+<tr class="memitem:a2c9d5fec968235f5953318db62995d0d"><td class="memItemLeft" align="right" valign="top">map&lt; string, vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#a2c9d5fec968235f5953318db62995d0d">testPhrasesList</a></td></tr>
+<tr class="separator:a2c9d5fec968235f5953318db62995d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2b43e7b9b74438d9b09ee115ccf39a"><td class="memItemLeft" align="right" valign="top">map&lt; string, vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_praktikum_8cpp.html#aef2b43e7b9b74438d9b09ee115ccf39a">testPhrasesTrie</a></td></tr>
+<tr class="separator:aef2b43e7b9b74438d9b09ee115ccf39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Makro-Dokumentation</h2>
+<a id="a59832b5b73a475c418e29280d0795965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59832b5b73a475c418e29280d0795965">&#9670;&nbsp;</a></span>DEBUGe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUGe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee4a22ef319744feb4ad641ca979681d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee4a22ef319744feb4ad641ca979681d">&#9670;&nbsp;</a></span>TEIL_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEIL_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unit-Tests fürs Praktikum * </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Funktionen</h2>
+<a id="a70b41017558113eb3b4a7ebb326e4003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b41017558113eb3b4a7ebb326e4003">&#9670;&nbsp;</a></span>buildPhrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buildPhrases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003_icgraph.png" border="0" usemap="#main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003_icgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003_icgraph" id="main_praktikum_8cpp_a70b41017558113eb3b4a7ebb326e4003_icgraph">
+<area shape="rect" id="node2" href="main_praktikum_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="151,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="main_praktikum_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
+<area shape="rect" id="node2" href="main_praktikum_8cpp.html#a70b41017558113eb3b4a7ebb326e4003" title="buildPhrases" alt="" coords="118,106,215,133"/>
+<area shape="rect" id="node3" href="class_c_trie_dec.html#a190f82222a2f7881b940066c54b00d38" title="CTrieDec::decode" alt="" coords="104,157,229,184"/>
+<area shape="rect" id="node12" href="class_c_trie_enc.html#a14832d9694f7aa5ba9d7d32d3a3c0793" title="CTrieEnc::encode" alt="" coords="104,233,229,260"/>
+<area shape="rect" id="node4" href="class_c_double_hashing.html#a3917e940f9bac5c981156062eb2b1169" title="CDoubleHashing::getInstance" alt="" coords="277,296,471,322"/>
+<area shape="rect" id="node5" href="class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9" title="CDoubleHashing::hash" alt="" coords="297,42,451,69"/>
+<area shape="rect" id="node6" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="519,68,653,94"/>
+<area shape="rect" id="node7" href="class_c_forward_counter.html#afc451afa9f8b76f70b28c08982265a86" title="Erhöht Zählerstand um 1. " alt="" coords="293,93,455,120"/>
+<area shape="rect" id="node9" href="class_c_knot.html#a6ad905f6be13af0bdff157559c02b909" title="CKnot::setParent" alt="" coords="313,144,435,170"/>
+<area shape="rect" id="node10" href="class_c_entry.html#a2ac2cbee24817ff5b67e09f03a952e77" title="CEntry::setSymbol" alt="" coords="308,194,440,221"/>
+<area shape="rect" id="node11" href="class_c_l_z_w.html#a7cd7b5a245b1b3a0eb1905d3a8e2be89" title="CLZW::intToString" alt="" coords="310,245,438,272"/>
+<area shape="rect" id="node8" href="class_c_counter.html#ac41245afdd95c0149e99bad21696a372" title="CCounter::setValue" alt="" coords="519,118,653,145"/>
+<area shape="rect" id="node13" href="class_c_entry.html#aede4d6e03efa3abb0ed56349edb5b86d" title="CEntry::getSymbol" alt="" coords="308,397,440,424"/>
+<area shape="rect" id="node14" href="class_c_knot.html#a22a037af3ea6162ff6d380480d568b80" title="CKnot::getParent" alt="" coords="313,448,435,474"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4bab75c637cecac537a51698d0942255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bab75c637cecac537a51698d0942255">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CForwardCounterTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InitialZero&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_cgraph" id="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_cgraph">
+<area shape="rect" id="node2" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="108,5,243,32"/>
+</map>
+</div>
+<div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_icgraph.png" border="0" usemap="#main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_icgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_icgraph" id="main_praktikum_8cpp_a4bab75c637cecac537a51698d0942255_icgraph">
+<area shape="rect" id="node2" href="main_praktikum_8cpp.html#ad6826b72032171a5da0f96710c47770f" title="TEST" alt="" coords="108,5,163,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd688014964b047d6ab75ade07019bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd688014964b047d6ab75ade07019bc4">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CForwardCounterTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Counting&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4_cgraph.png" border="0" usemap="#main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4_cgraph" id="main_praktikum_8cpp_acd688014964b047d6ab75ade07019bc4_cgraph">
+<area shape="rect" id="node2" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="319,5,453,32"/>
+<area shape="rect" id="node3" href="class_c_forward_counter.html#afc451afa9f8b76f70b28c08982265a86" title="Erhöht Zählerstand um 1. " alt="" coords="108,56,271,83"/>
+<area shape="rect" id="node4" href="class_c_counter.html#ac41245afdd95c0149e99bad21696a372" title="CCounter::setValue" alt="" coords="319,56,453,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5d12b20863d48d797ab380a75fbc767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d12b20863d48d797ab380a75fbc767">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CEntryTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InitialEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767_cgraph.png" border="0" usemap="#main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767_cgraph" id="main_praktikum_8cpp_ad5d12b20863d48d797ab380a75fbc767_cgraph">
+<area shape="rect" id="node2" href="class_c_entry.html#aede4d6e03efa3abb0ed56349edb5b86d" title="CEntry::getSymbol" alt="" coords="108,5,240,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10a140596f9c5c1c6c1311398894ad2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a140596f9c5c1c6c1311398894ad2f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CEntryTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetSymbol&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f_cgraph" id="main_praktikum_8cpp_a10a140596f9c5c1c6c1311398894ad2f_cgraph">
+<area shape="rect" id="node2" href="class_c_entry.html#a2ac2cbee24817ff5b67e09f03a952e77" title="CEntry::setSymbol" alt="" coords="108,5,240,32"/>
+<area shape="rect" id="node3" href="class_c_entry.html#aede4d6e03efa3abb0ed56349edb5b86d" title="CEntry::getSymbol" alt="" coords="108,56,240,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad5d367c74d2562e3de1d4918303eadc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d367c74d2562e3de1d4918303eadc1">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CEntryTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CountInstances&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1_cgraph.png" border="0" usemap="#main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1_cgraph" id="main_praktikum_8cpp_ad5d367c74d2562e3de1d4918303eadc1_cgraph">
+<area shape="rect" id="node2" href="class_c_entry.html#a6e8cde8d4a78cc65fceeb5f0430a2b55" title="CEntry::getNumber" alt="" coords="108,5,241,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d980bd09bc4f5da2079db25510896af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d980bd09bc4f5da2079db25510896af">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CArrayTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Array&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa419f08289451f94046bf9d76a3a3c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa419f08289451f94046bf9d76a3a3c8">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CArrayTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Exception&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84ced2fe8a0d361d63e86cbba4659476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ced2fe8a0d361d63e86cbba4659476">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CKnotTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">symbol&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476_cgraph" id="main_praktikum_8cpp_a84ced2fe8a0d361d63e86cbba4659476_cgraph">
+<area shape="rect" id="node2" href="class_c_entry.html#aede4d6e03efa3abb0ed56349edb5b86d" title="CEntry::getSymbol" alt="" coords="108,5,240,32"/>
+<area shape="rect" id="node3" href="class_c_entry.html#a2ac2cbee24817ff5b67e09f03a952e77" title="CEntry::setSymbol" alt="" coords="108,56,240,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc7aaae733712481d4c66e2de97adc9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7aaae733712481d4c66e2de97adc9a">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CKnotTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">parent&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a_cgraph.png" border="0" usemap="#main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a_cgraph" id="main_praktikum_8cpp_adc7aaae733712481d4c66e2de97adc9a_cgraph">
+<area shape="rect" id="node2" href="class_c_knot.html#a22a037af3ea6162ff6d380480d568b80" title="CKnot::getParent" alt="" coords="108,5,231,32"/>
+<area shape="rect" id="node3" href="class_c_knot.html#a6ad905f6be13af0bdff157559c02b909" title="CKnot::setParent" alt="" coords="108,56,231,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7909ae2a125e79069173f33eddcdbbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7909ae2a125e79069173f33eddcdbbb7">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CDoubleHashingTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SimpleHashing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7_cgraph" id="main_praktikum_8cpp_a7909ae2a125e79069173f33eddcdbbb7_cgraph">
+<area shape="rect" id="node2" href="class_c_double_hashing.html#a3917e940f9bac5c981156062eb2b1169" title="CDoubleHashing::getInstance" alt="" coords="108,5,301,32"/>
+<area shape="rect" id="node3" href="class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9" title="CDoubleHashing::hash" alt="" coords="127,56,282,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad6826b72032171a5da0f96710c47770f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6826b72032171a5da0f96710c47770f">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CDoubleHashingTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DoubleHashing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f_cgraph.png" border="0" usemap="#main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f_cgraph" id="main_praktikum_8cpp_ad6826b72032171a5da0f96710c47770f_cgraph">
+<area shape="rect" id="node2" href="class_c_double_hashing.html#a3917e940f9bac5c981156062eb2b1169" title="CDoubleHashing::getInstance" alt="" coords="108,5,301,32"/>
+<area shape="rect" id="node3" href="class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9" title="CDoubleHashing::hash" alt="" coords="127,56,282,83"/>
+<area shape="rect" id="node4" href="main_praktikum_8cpp.html#a4bab75c637cecac537a51698d0942255" title="TEST" alt="" coords="177,107,232,133"/>
+<area shape="rect" id="node6" href="class_c_array_enc.html#a51984cee678c54c93caf73aa82b596cc" title="CArrayEnc::encode" alt="" coords="137,157,272,184"/>
+<area shape="rect" id="node7" href="class_c_array_dec.html#a59b83f47506de60b41728d6889d5643a" title="CArrayDec::decode" alt="" coords="137,208,272,235"/>
+<area shape="rect" id="node5" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="349,107,484,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afe798561e31c621ee561fa79f16a12c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe798561e31c621ee561fa79f16a12c9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CTrieTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Encoder&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9_cgraph.png" border="0" usemap="#main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9_cgraph" id="main_praktikum_8cpp_afe798561e31c621ee561fa79f16a12c9_cgraph">
+<area shape="rect" id="node2" href="class_c_trie_enc.html#a14832d9694f7aa5ba9d7d32d3a3c0793" title="CTrieEnc::encode" alt="" coords="108,208,233,235"/>
+<area shape="rect" id="node3" href="class_c_double_hashing.html#a3917e940f9bac5c981156062eb2b1169" title="CDoubleHashing::getInstance" alt="" coords="281,5,475,32"/>
+<area shape="rect" id="node4" href="class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9" title="CDoubleHashing::hash" alt="" coords="301,56,455,83"/>
+<area shape="rect" id="node5" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="523,157,657,184"/>
+<area shape="rect" id="node6" href="class_c_entry.html#aede4d6e03efa3abb0ed56349edb5b86d" title="CEntry::getSymbol" alt="" coords="312,157,444,184"/>
+<area shape="rect" id="node7" href="class_c_knot.html#a22a037af3ea6162ff6d380480d568b80" title="CKnot::getParent" alt="" coords="317,208,439,235"/>
+<area shape="rect" id="node8" href="class_c_forward_counter.html#afc451afa9f8b76f70b28c08982265a86" title="Erhöht Zählerstand um 1. " alt="" coords="297,259,459,285"/>
+<area shape="rect" id="node10" href="class_c_knot.html#a6ad905f6be13af0bdff157559c02b909" title="CKnot::setParent" alt="" coords="317,309,439,336"/>
+<area shape="rect" id="node11" href="class_c_entry.html#a2ac2cbee24817ff5b67e09f03a952e77" title="CEntry::setSymbol" alt="" coords="312,360,444,387"/>
+<area shape="rect" id="node12" href="class_c_l_z_w.html#a7cd7b5a245b1b3a0eb1905d3a8e2be89" title="CLZW::intToString" alt="" coords="314,411,442,437"/>
+<area shape="rect" id="node9" href="class_c_counter.html#ac41245afdd95c0149e99bad21696a372" title="CCounter::setValue" alt="" coords="523,259,657,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9c935d5e4b57967cba5961c1d52f5103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c935d5e4b57967cba5961c1d52f5103">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">CTrieTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Decoder&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103_cgraph.png" border="0" usemap="#main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103_cgraph" alt=""/></div>
+<map name="main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103_cgraph" id="main_praktikum_8cpp_a9c935d5e4b57967cba5961c1d52f5103_cgraph">
+<area shape="rect" id="node2" href="class_c_trie_dec.html#a190f82222a2f7881b940066c54b00d38" title="CTrieDec::decode" alt="" coords="108,157,233,184"/>
+<area shape="rect" id="node3" href="class_c_double_hashing.html#a3917e940f9bac5c981156062eb2b1169" title="CDoubleHashing::getInstance" alt="" coords="281,5,475,32"/>
+<area shape="rect" id="node4" href="class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9" title="CDoubleHashing::hash" alt="" coords="301,56,455,83"/>
+<area shape="rect" id="node5" href="class_c_counter.html#ad91db4cd517159f7cbb7d3976eede482" title="CCounter::getValue" alt="" coords="523,107,657,133"/>
+<area shape="rect" id="node6" href="class_c_forward_counter.html#afc451afa9f8b76f70b28c08982265a86" title="Erhöht Zählerstand um 1. " alt="" coords="297,157,459,184"/>
+<area shape="rect" id="node8" href="class_c_knot.html#a6ad905f6be13af0bdff157559c02b909" title="CKnot::setParent" alt="" coords="317,208,439,235"/>
+<area shape="rect" id="node9" href="class_c_entry.html#a2ac2cbee24817ff5b67e09f03a952e77" title="CEntry::setSymbol" alt="" coords="312,259,444,285"/>
+<area shape="rect" id="node10" href="class_c_l_z_w.html#a7cd7b5a245b1b3a0eb1905d3a8e2be89" title="CLZW::intToString" alt="" coords="314,309,442,336"/>
+<area shape="rect" id="node7" href="class_c_counter.html#ac41245afdd95c0149e99bad21696a372" title="CCounter::setValue" alt="" coords="523,157,657,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variablen-Dokumentation</h2>
+<a id="a2c9d5fec968235f5953318db62995d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9d5fec968235f5953318db62995d0d">&#9670;&nbsp;</a></span>testPhrasesList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, vector&lt;unsigned int&gt; &gt; testPhrasesList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef2b43e7b9b74438d9b09ee115ccf39a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2b43e7b9b74438d9b09ee115ccf39a">&#9670;&nbsp;</a></span>testPhrasesTrie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map&lt;string, vector&lt;unsigned int&gt; &gt; testPhrasesTrie</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="main_praktikum_8cpp.html">mainPraktikum.cpp</a></li>
+    <li class="footer">Erzeugt am Sam Jun 2 2018 10:44:28 für Übung Objektorientierte Programmierung von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -2,11 +2,6 @@
 \label{class_c_counter}\index{C\+Counter@{C\+Counter}}
 
 
-Klasse \hyperlink{class_c_counter}{C\+Counter} zum Setzen, Inkrementieren und Vergleichen von Zählerständen.  
-
-
-
-
 {\ttfamily \#include $<$C\+Counter.\+hpp$>$}
 
 
@@ -16,7 +11,7 @@ Klassendiagramm für C\+Counter\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{class_c_counter__inherit__graph}
+\includegraphics[width=187pt]{class_c_counter__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -33,27 +28,25 @@ Zusammengehörigkeiten von C\+Counter\+:
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_c_counter_ab83c6f9600beb5686747493da731a04c}{C\+Counter} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Kontstruktor, paramenterlos. \end{DoxyCompactList}\item 
 virtual \hyperlink{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}{$\sim$\+C\+Counter} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Dekonstruktor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}{count} ()
+\begin{DoxyCompactList}\small\item\em Erhöht Zählerstand um 1. \end{DoxyCompactList}\item 
 int \hyperlink{class_c_counter_ad91db4cd517159f7cbb7d3976eede482}{get\+Value} () const
 \item 
 void \hyperlink{class_c_counter_ac41245afdd95c0149e99bad21696a372}{set\+Value} (int value)
 \item 
-virtual void \hyperlink{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}{count} ()
+bool \hyperlink{class_c_counter_ab15aa17d719e8efa41d2d10d8bcac41c}{operator$>$} (const \hyperlink{class_c_counter}{C\+Counter} \&right) const
 \item 
-bool \hyperlink{class_c_counter_ac43e4c4cb447d22636ac208d426d95eb}{operator$<$} (const \hyperlink{class_c_counter}{C\+Counter} \&other) const
-\item 
-bool \hyperlink{class_c_counter_a23decf75e74ddfd25feb11ae6aad9c8a}{operator$>$} (const \hyperlink{class_c_counter}{C\+Counter} \&other) const
+bool \hyperlink{class_c_counter_a037e2875c6d72c03fc72cb3cf13f5636}{operator$<$} (const \hyperlink{class_c_counter}{C\+Counter} \&right) const
 \end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
-Klasse \hyperlink{class_c_counter}{C\+Counter} zum Setzen, Inkrementieren und Vergleichen von Zählerständen. 
+Klasse \hyperlink{class_c_counter}{C\+Counter}
 
-\hyperlink{class_c_counter_ab83c6f9600beb5686747493da731a04c}{C\+Counter()} ist der parameterlose Konstruktor \hyperlink{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}{$\sim$\+C\+Counter()} ist der Destruktor int \hyperlink{class_c_counter_ad91db4cd517159f7cbb7d3976eede482}{get\+Value()} liefert den Zählerstand void \hyperlink{class_c_counter_ac41245afdd95c0149e99bad21696a372}{set\+Value(int)} setzt den Zählerstand void \hyperlink{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}{count()} inkrementiert den Zählerstand bool operator$<$(\+C\+Counter\&) prüft, ob Argument größeren Zählerstand besitzt bool operator$>$(\+C\+Counter\&)
-
-int m\+\_\+value ist die private Membervariable für den Zählerstand. Wir verwenden die Konvention, dass der Namen privater Membervariablen mit m\+\_\+ beginnt. 
+Enthalt Membervariable mem 
 
 \subsection{Beschreibung der Konstruktoren und Destruktoren}
 \mbox{\Hypertarget{class_c_counter_ab83c6f9600beb5686747493da731a04c}\label{class_c_counter_ab83c6f9600beb5686747493da731a04c}} 
@@ -62,13 +55,21 @@ int m\+\_\+value ist die private Membervariable für den Zählerstand. Wir verwe
 \subsubsection{\texorpdfstring{C\+Counter()}{CCounter()}}
 {\footnotesize\ttfamily C\+Counter\+::\+C\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Deklaration des parameterlosen Konstruktors. \mbox{\Hypertarget{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}\label{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}} 
+
+
+Kontstruktor, paramenterlos. 
+
+\mbox{\Hypertarget{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}\label{class_c_counter_a1af3cc000781fcd67b9e4fe1b25fbc9c}} 
 \index{C\+Counter@{C\+Counter}!````~C\+Counter@{$\sim$\+C\+Counter}}
 \index{````~C\+Counter@{$\sim$\+C\+Counter}!C\+Counter@{C\+Counter}}
 \subsubsection{\texorpdfstring{$\sim$\+C\+Counter()}{~CCounter()}}
 {\footnotesize\ttfamily C\+Counter\+::$\sim$\+C\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Destruktor von \hyperlink{class_c_counter}{C\+Counter} 
+
+
+Dekonstruktor. 
+
+
 
 \subsection{Dokumentation der Elementfunktionen}
 \mbox{\Hypertarget{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}\label{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d}} 
@@ -77,72 +78,52 @@ Destruktor von \hyperlink{class_c_counter}{C\+Counter}
 \subsubsection{\texorpdfstring{count()}{count()}}
 {\footnotesize\ttfamily void C\+Counter\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Inkrementiert den Zählerstand um 1 
 
-Erneute Implementation in \hyperlink{class_c_variable_counter_a693c27202acd18d53c4642ce642927bc}{C\+Variable\+Counter} und \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{C\+Forward\+Counter}.
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=244pt]{class_c_counter_a90f3e164f3fc1dcf91044702d6940c4d_icgraph}
-\end{center}
-\end{figure}
+Erhöht Zählerstand um 1. 
+
+
+
+Erneute Implementation in \hyperlink{class_c_forward_counter_afc451afa9f8b76f70b28c08982265a86}{C\+Forward\+Counter}.
+
 \mbox{\Hypertarget{class_c_counter_ad91db4cd517159f7cbb7d3976eede482}\label{class_c_counter_ad91db4cd517159f7cbb7d3976eede482}} 
 \index{C\+Counter@{C\+Counter}!get\+Value@{get\+Value}}
 \index{get\+Value@{get\+Value}!C\+Counter@{C\+Counter}}
 \subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
 {\footnotesize\ttfamily int C\+Counter\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Gib den Wert der Zählervariable aus. \begin{DoxyReturn}{Rückgabe}
-enthält den Wert der Zählervariable m\+\_\+value. 
-\end{DoxyReturn}
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=335pt]{class_c_counter_ad91db4cd517159f7cbb7d3976eede482_icgraph}
+\includegraphics[width=350pt]{class_c_counter_ad91db4cd517159f7cbb7d3976eede482_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_c_counter_ac43e4c4cb447d22636ac208d426d95eb}\label{class_c_counter_ac43e4c4cb447d22636ac208d426d95eb}} 
+\mbox{\Hypertarget{class_c_counter_a037e2875c6d72c03fc72cb3cf13f5636}\label{class_c_counter_a037e2875c6d72c03fc72cb3cf13f5636}} 
 \index{C\+Counter@{C\+Counter}!operator$<$@{operator$<$}}
 \index{operator$<$@{operator$<$}!C\+Counter@{C\+Counter}}
 \subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
-{\footnotesize\ttfamily bool C\+Counter\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_c_counter}{C\+Counter} \&}]{other }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool C\+Counter\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_c_counter}{C\+Counter} \&}]{right }\end{DoxyParamCaption}) const}
 
-Prüft, ob der Zählerstand kleiner ist, als der Eingabeparameter. Die Memberfunktion \hyperlink{class_c_counter_ac43e4c4cb447d22636ac208d426d95eb}{operator$<$()} steht für den Operator $<$ . 
-\begin{DoxyParams}{Parameter}
-{\em other} & ist der Eingabeparameter. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Rückgabe}
-ist wahr, falls der Zählerstand kleiner als der Eingabeparameter ist. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_c_counter_a23decf75e74ddfd25feb11ae6aad9c8a}\label{class_c_counter_a23decf75e74ddfd25feb11ae6aad9c8a}} 
+\mbox{\Hypertarget{class_c_counter_ab15aa17d719e8efa41d2d10d8bcac41c}\label{class_c_counter_ab15aa17d719e8efa41d2d10d8bcac41c}} 
 \index{C\+Counter@{C\+Counter}!operator$>$@{operator$>$}}
 \index{operator$>$@{operator$>$}!C\+Counter@{C\+Counter}}
 \subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
-{\footnotesize\ttfamily bool C\+Counter\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_c_counter}{C\+Counter} \&}]{other }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily bool C\+Counter\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \hyperlink{class_c_counter}{C\+Counter} \&}]{right }\end{DoxyParamCaption}) const}
 
-Prüft, ob der Zählerstand größer ist, als der Eingabeparameter. Die Memberfunktion \hyperlink{class_c_counter_a23decf75e74ddfd25feb11ae6aad9c8a}{operator$>$()} steht für den Operator $>$ . 
-\begin{DoxyParams}{Parameter}
-{\em other} & ist der Eingabeparameter. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Rückgabe}
-ist wahr, falls der Zählerstand größer als der Eingabeparameter ist. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_c_counter_ac41245afdd95c0149e99bad21696a372}\label{class_c_counter_ac41245afdd95c0149e99bad21696a372}} 
 \index{C\+Counter@{C\+Counter}!set\+Value@{set\+Value}}
 \index{set\+Value@{set\+Value}!C\+Counter@{C\+Counter}}
 \subsubsection{\texorpdfstring{set\+Value()}{setValue()}}
 {\footnotesize\ttfamily void C\+Counter\+::set\+Value (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
-Setze die Zählervariable. 
+$<$Getter \begin{DoxyReturn}{Rückgabe}
+Wert der Membervariable Setter 
+\end{DoxyReturn}
+
 \begin{DoxyParams}{Parameter}
-{\em value} & Die Zählervariable m\+\_\+value wird auf den Wert der Parametervariable value gesetzt. \\
+{\em value} & neuer Wert der Membervariable \\
 \hline
 \end{DoxyParams}
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
@@ -150,12 +131,12 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=258pt]{class_c_counter_ac41245afdd95c0149e99bad21696a372_icgraph}
+\includegraphics[width=350pt]{class_c_counter_ac41245afdd95c0149e99bad21696a372_icgraph}
 \end{center}
 \end{figure}
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\hyperlink{_c_counter_8hpp}{C\+Counter.\+hpp}\item 
-C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/\+Blatt2/src/\hyperlink{_c_counter_8cpp}{C\+Counter.\+cpp}\end{DoxyCompactItemize}
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_counter_8hpp}{C\+Counter.\+hpp}\item 
+C\+:/portable\+Dev\+Env\+\_\+2017/workspace2017/project/src/\hyperlink{_c_counter_8cpp}{C\+Counter.\+cpp}\end{DoxyCompactItemize}

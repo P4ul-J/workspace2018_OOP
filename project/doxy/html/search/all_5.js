@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setvalue',['setValue',['../class_c_counter.html#ac41245afdd95c0149e99bad21696a372',1,'CCounter']]]
+  ['hash',['hash',['../class_c_double_hashing.html#a0ec6ff1eb94927284b8e6fe4f650ecf9',1,'CDoubleHashing']]]
 ];
