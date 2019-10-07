@@ -1,5 +1,0 @@
-<map id="CEnc" name="CEnc">
-<area shape="rect" id="node3" href="$class_c_array_enc.html" title="LZW Encoder Klasse für die Encodierung erbt von CEnc. " alt="" coords="5,293,111,385"/>
-<area shape="rect" id="node4" href="$class_c_trie_enc.html" title="LZW Encoder Klasse für die Encodierung erbt von CEnc. " alt="" coords="135,285,237,392"/>
-<area shape="rect" id="node2" href="$class_c_l_z_w.html" title="CLZW.hpp Basisklasse für LZW Encoder und Decoder. " alt="" coords="70,5,174,97"/>
-</map>

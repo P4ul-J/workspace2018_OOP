@@ -1,7 +1,0 @@
-18:15:09 **** Incremental Build of configuration Debug for project project_check ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainPraktikum.o" "..\\src\\mainPraktikum.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\..\\gtest\\lib" -o project_check.exe "src\\CArrayDec.o" "src\\CArrayEnc.o" "src\\CCounter.o" "src\\CDec.o" "src\\CDoubleHashing.o" "src\\CEnc.o" "src\\CEntry.o" "src\\CForwardCounter.o" "src\\CKnot.o" "src\\CLZW.o" "src\\CTrieDec.o" "src\\CTrieEnc.o" "src\\XOutOfBounds.o" "src\\mainPraktikum.o" -lgtest 
-
-18:15:13 Build Finished (took 3s.751ms)
-

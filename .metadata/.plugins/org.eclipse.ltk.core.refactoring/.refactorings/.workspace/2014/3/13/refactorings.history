@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;!HelloWorldJava&apos;" deleteContents="false" description="Delete resource &apos;!HelloWorldJava&apos;" element1="/!HelloWorldJava" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1396032181990"/>&#x0A;<refactoring comment="Delete resource &apos;!HelloWorldCPP&apos;" deleteContents="false" description="Delete resource &apos;!HelloWorldCPP&apos;" element1="/!HelloWorldCPP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1396032184818"/>
-</session>

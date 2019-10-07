@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Blatt1_OpenCV_WebcamCanny/src/Blatt1_OpenCV_3.2.0.cpp&apos; to &apos;Blatt1_OpenCV_WebcamCanny.cpp&apos;" description="Rename resource &apos;Blatt1_OpenCV_3.2.0.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Blatt1_OpenCV_3.2.0.cpp" name="Blatt1_OpenCV_WebcamCanny.cpp" stamp="1491035819257" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$class_c_entry.html" title="Enthält Zeichenketten und Anzahl der Objekte dieser Klasse Wird später von CKnot benötigt/erweitert. " alt="" coords="5,5,68,32"/>
-<area shape="rect" id="node2" href="$class_c_knot.html" title="Erweiterung von CEntry Erweitert CEntry zusätzlich um die Variable m_parent und wird zur Verwaltung b..." alt="" coords="116,5,175,32"/>
-</map>

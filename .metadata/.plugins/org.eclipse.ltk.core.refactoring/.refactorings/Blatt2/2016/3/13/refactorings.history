@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Blatt2/include/CCounter.h&apos; to &apos;neuCCounter.h&apos;" description="Rename resource &apos;CCounter.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/CCounter.h" name="neuCCounter.h" stamp="1459286236751" updateReferences="true"/>
-</session>
