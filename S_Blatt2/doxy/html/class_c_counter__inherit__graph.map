@@ -1,4 +1,0 @@
-<map id="CCounter" name="CCounter">
-<area shape="rect" id="node2" href="$class_c_forward_counter.html" title="{CForwardCounter\n||+ CForwardCounter()\l+ count()\l}" alt="" coords="5,197,148,289"/>
-<area shape="rect" id="node3" href="$class_c_variable_counter.html" title="{CVariableCounter\n|# m_step\l|+ CVariableCounter()\l+ CVariableCounter()\l+ count()\l}" alt="" coords="172,189,315,296"/>
-</map>

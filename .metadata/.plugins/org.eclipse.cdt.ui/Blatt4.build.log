@@ -1,7 +1,0 @@
-09:02:52 **** Incremental Build of configuration Debug for project Blatt4 ****
-Info: Internal Builder is used for build
-g++ "-IC:\\portableDevEnv_2017\\eclipse\\/../gtest/include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mainBlatt4.o" "..\\src\\mainBlatt4.cpp" 
-g++ "-LC:\\portableDevEnv_2017\\eclipse\\/../gtest/lib" -o Blatt4.exe "src\\CEntry.o" "src\\CSwapper.o" "src\\mainBlatt4.o" -lgtest 
-
-09:02:54 Build Finished (took 2s.141ms)
-

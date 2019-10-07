@@ -1,8 +1,0 @@
-<map id="CLZW" name="CLZW">
-<area shape="rect" id="node2" href="$class_c_dec.html" title="Abstrakte Basisklasse für die Decoder. " alt="" coords="144,145,228,237"/>
-<area shape="rect" id="node5" href="$class_c_enc.html" title="Abstrakte Basisklasse für die Encoder. " alt="" coords="272,145,356,237"/>
-<area shape="rect" id="node3" href="$class_c_array_dec.html" title="LZW Decoder Klasse für die Decodierung erbt von CDec. " alt="" coords="5,293,111,385"/>
-<area shape="rect" id="node4" href="$class_c_trie_dec.html" title="LZW Decoder Klasse für die Decodierung erbt von CEnc. " alt="" coords="135,285,237,392"/>
-<area shape="rect" id="node6" href="$class_c_array_enc.html" title="LZW Encoder Klasse für die Encodierung erbt von CEnc. " alt="" coords="261,293,367,385"/>
-<area shape="rect" id="node7" href="$class_c_trie_enc.html" title="LZW Encoder Klasse für die Encodierung erbt von CEnc. " alt="" coords="391,285,493,392"/>
-</map>
